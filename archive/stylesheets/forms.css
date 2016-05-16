@@ -1,0 +1,281 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+.basic-button, .general-form input[type="submit"], .try-touchbistro input[type="submit"], .referral input[type="submit"], .contact-us input[type="submit"], .general-form input[type="submit"]:hover, .try-touchbistro input[type="submit"]:hover, .referral input[type="submit"]:hover, .contact-us input[type="submit"]:hover,
+.basic-button:hover,
+.general-form input[type="submit"]:hover,
+.try-touchbistro input[type="submit"]:hover,
+.referral input[type="submit"]:hover,
+.contact-us input[type="submit"]:hover,
+.basic-button:active,
+.general-form input[type="submit"]:active,
+.try-touchbistro input[type="submit"]:active,
+.referral input[type="submit"]:active,
+.contact-us input[type="submit"]:active {
+  color: #ffffff;
+  padding: 10px 25px;
+  background-color: #b29a5c;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .basic-button:hover, .general-form input[type="submit"]:hover, .try-touchbistro input[type="submit"]:hover, .referral input[type="submit"]:hover, .contact-us input[type="submit"]:hover {
+    background-color: #ab9053;
+  }
+}
+
+.general-form input, .try-touchbistro input, .referral input, .contact-us input, .general-form select, .try-touchbistro select, .referral select, .contact-us select, .general-form textarea, .try-touchbistro textarea, .referral textarea, .contact-us textarea {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-weight: 300;
+  color: #524c49;
+  outline: none;
+}
+.general-form input, .try-touchbistro input, .referral input, .contact-us input {
+  background-color: white;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 9px 5px;
+}
+@media screen and (min-width: 320px) {
+  .general-form input, .try-touchbistro input, .referral input, .contact-us input {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .general-form input, .try-touchbistro input, .referral input, .contact-us input {
+    width: 97.8%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .general-form input, .try-touchbistro input, .referral input, .contact-us input {
+    width: 97.8%;
+  }
+}
+.general-form select, .try-touchbistro select, .referral select, .contact-us select {
+  background: transparent;
+  line-height: 1;
+  -webkit-appearance: none;
+  font-size: 14px;
+  padding: 8px 5px;
+  border: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .general-form select, .try-touchbistro select, .referral select, .contact-us select {
+    width: 105%;
+  }
+}
+.general-form .styled-select, .try-touchbistro .styled-select, .referral .styled-select, .contact-us .styled-select {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 3px;
+  background-image: url("../images/select-arrow.png");
+  background-position: 97% center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 320px) {
+  .general-form .styled-select, .try-touchbistro .styled-select, .referral .styled-select, .contact-us .styled-select {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .general-form .styled-select, .try-touchbistro .styled-select, .referral .styled-select, .contact-us .styled-select {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .general-form .styled-select, .try-touchbistro .styled-select, .referral .styled-select, .contact-us .styled-select {
+    width: 99%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .general-form .styled-select, .try-touchbistro .styled-select, .referral .styled-select, .contact-us .styled-select {
+    width: 101%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .general-form .styled-select, .try-touchbistro .styled-select, .referral .styled-select, .contact-us .styled-select {
+    width: 100%;
+  }
+}
+.general-form textarea, .try-touchbistro textarea, .referral textarea, .contact-us textarea {
+  background-color: white;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 9px 5px;
+  height: 117px;
+}
+@media screen and (min-width: 320px) {
+  .general-form textarea, .try-touchbistro textarea, .referral textarea, .contact-us textarea {
+    width: 95.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .general-form textarea, .try-touchbistro textarea, .referral textarea, .contact-us textarea {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .general-form textarea, .try-touchbistro textarea, .referral textarea, .contact-us textarea {
+    width: 94.6%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .general-form textarea, .try-touchbistro textarea, .referral textarea, .contact-us textarea {
+    width: 94.2%;
+  }
+}
+.general-form .column-one, .try-touchbistro .column-one, .referral .column-one, .contact-us .column-one, .general-form .column-two, .try-touchbistro .column-two, .referral .column-two, .contact-us .column-two {
+  vertical-align: top;
+}
+@media screen and (min-width: 1024px) {
+  .general-form .column-one, .try-touchbistro .column-one, .referral .column-one, .contact-us .column-one, .general-form .column-two, .try-touchbistro .column-two, .referral .column-two, .contact-us .column-two {
+    display: inline-block;
+    width: 46%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .general-form .column-one, .try-touchbistro .column-one, .referral .column-one, .contact-us .column-one {
+    margin-right: 20px;
+  }
+}
+.general-form input[type="submit"], .try-touchbistro input[type="submit"], .referral input[type="submit"], .contact-us input[type="submit"], .general-form input[type="submit"]:hover, .try-touchbistro input[type="submit"]:hover, .referral input[type="submit"]:hover, .contact-us input[type="submit"]:hover {
+  display: block;
+  padding: 15px 0;
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  .general-form input[type="submit"], .try-touchbistro input[type="submit"], .referral input[type="submit"], .contact-us input[type="submit"], .general-form input[type="submit"]:hover, .try-touchbistro input[type="submit"]:hover, .referral input[type="submit"]:hover, .contact-us input[type="submit"]:hover {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .general-form input[type="submit"], .try-touchbistro input[type="submit"], .referral input[type="submit"], .contact-us input[type="submit"], .general-form input[type="submit"]:hover, .try-touchbistro input[type="submit"]:hover, .referral input[type="submit"]:hover, .contact-us input[type="submit"]:hover {
+    width: 215px;
+    margin: 30px auto 0 auto;
+  }
+}
+.general-form label, .try-touchbistro label, .referral label, .contact-us label {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .try-touchbistro {
+    padding-bottom: 30px;
+  }
+}
+.try-touchbistro input {
+  border: none;
+}
+@media screen and (min-width: 1024px) {
+  .try-touchbistro input {
+    width: 96.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .try-touchbistro input[type="submit"], .try-touchbistro input[type="submit"]:hover {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .try-touchbistro input[type="submit"], .try-touchbistro input[type="submit"]:hover {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .try-touchbistro input[type="submit"], .try-touchbistro input[type="submit"]:hover {
+    width: 215px;
+  }
+}
+.try-touchbistro label {
+  margin: 20px 0 5px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .referral {
+    width: 412px;
+    margin: 30px auto 0 auto;
+  }
+}
+.referral input {
+  border: 1px solid #939598;
+  border-radius: 0;
+  margin-bottom: 48px;
+}
+.referral label {
+  color: #58595b;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.referral input[type="submit"], .referral input[type="submit"]:hover {
+  margin-top: 0;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact-us {
+  margin-top: 35px;
+}
+.contact-us label {
+  color: #4d4d4f;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact-us label span {
+  color: #dc0000;
+}
+.contact-us input, .contact-us textarea, .contact-us .styled-select {
+  border: 1px solid #79797b;
+}
+.contact-us input, .contact-us textarea, .contact-us .styled-select {
+  margin-bottom: 20px;
+}
+.contact-us input[type="submit"], .contact-us input[type="submit"]:hover {
+  border: none;
+  padding: 20px 0;
+}

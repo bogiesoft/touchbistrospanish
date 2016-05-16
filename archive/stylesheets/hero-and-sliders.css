@@ -1,0 +1,79 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+.full-hero, .page-hero {
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 320px) {
+  .full-hero, .page-hero {
+    height: 210px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 480px) {
+  .full-hero, .page-hero {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .full-hero, .page-hero {
+    height: 450px;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .full-hero, .page-hero {
+    height: 675px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .full-hero, .page-hero {
+    height: 1050px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page-hero {
+    height: 1280px;
+  }
+}

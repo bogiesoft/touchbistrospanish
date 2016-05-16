@@ -1,0 +1,239 @@
+@import "vars";
+@import "layout";
+@import "mixins";
+@import "buttons";
+@import "compass/css3";
+
+aside.press-releases {
+
+	vertical-align: top;
+	padding-top: 50px;
+
+	a {
+		color: $tint-colour;
+	}
+
+	a.media-links {
+		display: block;
+		text-transform: uppercase;
+		font-size: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #000;
+		margin-bottom: 25px;
+	}
+
+	p {
+		color: #4d4d4f;
+		font-size: 18px;
+
+		a {
+			font-size: 18px;
+			display: inline;
+		}
+	}
+
+	.button, .button:hover {
+		@extend .basic-button;
+		font-size: 18px;
+		padding: 14px 50px;
+		margin-top: 25px;
+	}
+
+	@media screen and #{$mobile} {
+		display: block;
+	}
+
+	@media screen and #{$widescreen} {
+		margin-top:0;
+		width: 331px;
+		display: inline-block;
+		padding-left: 60px;
+	}
+}
+
+/* careers single asides */
+
+aside.career-aside {
+
+	vertical-align: top;
+
+	a {
+		color: $tint-colour;
+	}
+
+	a.media-links {
+		display: block;
+		text-transform: uppercase;
+		font-size: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #000;
+		margin-bottom: 25px;
+	}
+
+	.email-pod {
+		text-align: center;
+		max-width: 280px;
+	}
+
+	img {
+		width: 32px;
+		height: 23px;
+		margin: 8px 17px 0 0;
+	    vertical-align: top;
+	}
+
+	p {
+		display: inline-block;
+		color: #292b26;
+		font-size: 14px;
+		text-align: left;
+		line-height: 18px;
+		font-weight: bold;
+	}
+
+	.button, .button:hover {
+		@extend .basic-button;
+		font-size: 18px;
+		padding: 14px 50px;
+		margin-top: 25px;
+		margin-bottom: 13px;
+		font-weight: 700;
+		width: 180px;
+		max-width: 280px;
+	}
+
+	@media screen and #{$mobile} {
+		display: block;
+		margin-left: 0px;
+	}
+
+	@media screen and #{$widescreen} {
+		margin-left: 143px;
+		margin-top:0;
+		width: 280px;
+		display: inline-block;
+	}
+}
+
+aside.media-coverage {
+
+	vertical-align: top;
+	padding-top: 50px;
+
+	a {
+		color: $tint-colour;
+	}
+
+	a.media-links {
+		display: block;
+		text-transform: uppercase;
+		font-size: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #000;
+		margin-bottom: 25px;
+	}
+
+	p {
+		color: #4d4d4f;
+		font-size: 18px;
+
+		a {
+			font-size: 18px;
+			display: inline;
+		}
+	}
+
+	.button, .button:hover {
+		@extend .basic-button;
+		font-size: 18px;
+		padding: 14px 50px;
+		margin-top: 25px;
+	}
+
+	@media screen and #{$mobile} {
+		display: block;
+	}
+
+	@media screen and #{$desktop} {
+		margin-top:0;
+		width: 331px;
+		display: inline-block;
+		padding-left: 60px;
+	}
+}
+
+aside.contact-us {
+
+	vertical-align: top;
+	padding-top: 20px;
+	font-size: 16px;
+
+	@media screen and #{$mobile} {
+		display: block;
+	}
+
+	@media screen and #{$desktop} {
+		margin-top:0;
+		width: 331px;
+		display: inline-block;
+		padding-left: 60px;
+	}
+
+	.toronto {
+		margin-top: 25px;
+	}
+
+	h3, p {
+		color: #4d4d4f;
+	}
+
+	p {
+		font-family: "Gotham SSm A", "Gotham SSm B";
+		line-height: 20px;
+		font-weight: 300;
+	}
+
+	p.title {
+		padding-bottom: 5px;
+		border-bottom: 1px solid #4d4d4f;
+		margin-bottom: 10px;
+		font-weight: 500;
+	}
+
+	img {
+		margin: 25px 0 15px 0;
+
+		@media screen and #{$mobile} {
+			width: 100%;
+		}
+
+		@media screen and #{$mobile-landscape} {
+			width: auto;
+		}
+	}
+
+	dl {
+		font-family: "Gotham SSm A", "Gotham SSm B";
+		margin-top: 25px;
+		font-weight: 300;
+	}
+
+	dt, dd {
+		color: #4d4d4f;
+		display: inline-block;
+		line-height: 20px;
+	}
+
+	dt {
+		width: 30%;
+	}
+
+	dd {
+		width: 67%;
+	}
+}
+
+
+
+
+

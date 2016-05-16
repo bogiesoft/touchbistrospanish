@@ -1,0 +1,2238 @@
+/*
+	Theme Name: TouchBistro
+	Theme URI: http://www.touchbistro.com/
+	Author: Sixtooth
+	Author URI: http://www.sixtooth.com/
+	Version: 1.0.0
+*/
+html, body, div, span, applet, object, iframe,
+h1,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+
+}
+ul.menu, ul.nav, #footer ul, .section-filter-navigation ul, .reviews-filter-section ul, .jobs ul, ul.toggles, ul.event-info, .nav-group ul {
+	list-style: none;
+    line-height: inherit;
+    margin-left: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img, a:hover img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+.responsive-break{
+	display:inline-block;
+}
+.break{
+	display:block;
+}
+.goldribbon {
+    text-align: center;
+    margin: 30px 0;
+    background-image: url(../images/Customer-happines-DNA.png);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 20px;
+    padding: 18px 18%;
+    color: #fff;
+    font-size: 26px;
+    text-transform: none;
+    font-weight: 400;
+    position: relative;
+    font-family: "Gotham SSm A", "Gotham SSm B";
+    text-shadow: none;
+}
+.goldribbon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 2px;
+    width: 10%;
+    border-bottom: 1px solid #b59859;
+    margin: 1% 3%
+}
+.goldribbon:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    height: 2px;
+    width: 10%;
+    border-bottom: 1px solid #b59859;
+    margin: 1% 3%
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.img-responsive {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+special {
+  font-size: 20px;
+    line-height: 22px;
+    display: inline-block;
+    border-top: 1px solid #464646;
+    border-bottom: 1px solid #464646;
+    margin: 0 2px;
+    position: relative;
+    bottom: 4px;
+}
+span.special {
+    font-size: 20px;
+    line-height: 22px;
+    display: inline-block;
+    border-top: 1px solid #464646;
+    border-bottom: 1px solid #464646;
+    margin: 0 2px;
+    position: relative;
+    bottom: 4px;
+}
+.errornum {
+    font-family: "Gotham Cond A", "Gotham Cond B";
+    font-weight: 600;
+    opacity: 0.05;
+    font-size: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+/* headings
+=============*/
+/* headings
+=============*/
+/* gold */
+/* links
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons
+===========*/
+/* stronger gold */
+/* footer
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+@font-face {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  src: url(../fonts/webfonts/gothamhtf-book-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-book-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-book-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-book-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-book-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-bold";
+  src: url(../fonts/webfonts/gothamhtf-bold-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-bold-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-bold-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-bold-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Cond A", "Gotham Cond B";
+
+  src: url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Cond A", "Gotham Cond B";
+  src: url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+.fa-star {
+  color: #f7d12d;
+}
+
+/* links and type
+================== */
+body {
+  color: #363636;
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color:#b29a5c;
+}
+p {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1, h2 {
+  /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.09), 0 0 25px rgba(0, 0, 0, 0.07); */
+  font-family: "Gotham Cond A", "Gotham Cond B";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 0px) {
+  h1, h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 770px) {
+  h1, h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 860px) {
+  h1, h2 {
+    /* text shadow only on home titles?
+    	@include text-shadow(rgba(0, 0, 0, 0.09) 0 2px 3px, rgba(0, 0, 0, 0.07) 0 0 25px);
+    */
+    font-size: 86px;
+  }
+  span.special {
+	      font-size: 22px;
+    line-height: 24px;
+
+}
+}
+
+@media screen and (min-width: 0px) {
+  h1.lead-title, h2.lead-title {
+    padding-top: 35px;
+  }
+  .black-opacity-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.4;
+	
+}
+}
+@media screen and (min-width: 860px) {
+  h1.lead-title, h2.lead-title {
+    padding-top: 68px;
+  }
+  .black-opacity-cover {
+	  display:none;
+}
+.full-hero-section h3 {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+}
+
+h2 {
+  font-family: "Gotham Cond A", "Gotham Cond B";
+}
+@media screen and (min-width: 0px) {
+  h2 {
+    font-size: 32px;
+    padding-top: 40px;
+  }
+  
+}
+@media screen and (min-width: 770px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 860px) {
+  h2 {
+    
+    font-size: 64px;
+    line-height: 70px; /*jon*/
+    padding-top: 66px;
+  }
+}
+
+h3 {
+  font-family: "Gotham Cond A", "Gotham Cond B";
+
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+@media screen and (min-width: 0px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 770px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 860px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height:30px;
+}
+
+h6 {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+}
+@media screen and (min-width: 0px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 770px) {
+  h6 {
+    font-size: 18px;
+  }
+}
+.level-three h1, body.cke_editable h1 {
+    color: #363636;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.entry blockquote author>h2, body.cke_editable blockquote author>h2, .entry blockquote.author>h2, body.cke_editable blockquote.author>h2 {
+    color: #3b3b3b;
+    font-weight: 600;
+    font-size: 26px;
+    font-family: "Gotham SSm A", "Gotham SSm B";
+    padding: 0;
+    margin-bottom: 5px;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.strong, strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.addthis_toolbox.addthis_floating_style {
+    top: 190px;
+}
+.main {
+    margin-top: 100px;
+}
+.remarketing {
+    position: absolute;
+    bottom: 0;
+}
+body>footer {
+    margin: 0;
+}
+
+/* layout
+=========== */
+
+@media screen and (min-width: 0px) {
+	.all {
+		min-height:100vh;
+	}
+  .lead-section, .try-tb-lead {
+    margin-top: 20vw;
+	}
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+  padding: 0 40px 0 40px;
+}
+.business-section-generic .section-sub-navigation .container {
+    max-width: none;
+    padding: 0 2%;
+}
+
+
+/*sign in*/
+
+.login.full-hero-section {
+	background-position: top right;
+	height: 750px;
+}
+
+.login-container {
+	color:#4d4d4f;
+	padding: 40px 0;
+	width:39%;
+}
+
+.login-box {
+	border: 1px solid #4d4d4f;
+	padding: 30px;
+	margin:auto;
+	margin-top: 30px;
+	text-align:left;
+}
+
+.login-box h4 {
+	font-size:30px;
+	font-family: "Gotham Cond A", "Gotham Cond B";
+	margin-bottom: 15px;
+}
+
+.login-box label {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+}
+
+.login-box input.username, .login-box input.password {
+	width: 93%;
+	padding: 3%;
+	font-size:17px;
+	border-radius: 2px;
+	border: 1px solid #4d4d4f;
+}
+
+.login-box .submit {
+	width: 100%;
+	margin-top: 30px;
+	background: #b99a5a;
+	color:#fff;
+	cursor:pointer;
+	border:none;
+	padding: 3%;
+	font-size:17px;
+}
+
+.login-box .form-etc {
+	margin-top: 30px;
+}
+
+.login-box .forgot-pw {
+	font-size: 13px;
+	color:#b99a5a;
+	float:right;
+	line-height:19px;
+	margin-left: 25px;
+}
+
+.register {
+	margin: 50px 0;
+}
+.events .register {
+	margin: 10px 0 50px 0;
+}
+.register .registerfree {
+	border: 1px solid #4d4d4f;
+	color: #b99a5a;
+	padding: 15px;
+	border-radius: 2px;
+	font-size: 15px;
+}
+
+.register p {
+	display:inline-block;
+	margin-right:20px;
+}
+
+.login {
+	background: transparent url("../images/login.jpg") no-repeat center top;
+	background-size:auto 100%;
+}
+
+.login-img {
+	float:right;
+	width: 50%;
+	color:#fff;
+}
+
+.login-img-text {
+	position:absolute;
+	top: 210px;
+	text-align:left;
+	width: 190px;
+	font-size:20px;
+	line-height: 30px;
+	right:130px;
+}
+
+.login-img-text p {
+	text-transform: uppercase;
+	font-family: "Gotham Cond A", "Gotham Cond B";
+	padding-bottom: 20px;
+}
+
+.login-img .refer-btn{
+	background: #00a651;
+	color:#fff;
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	padding: 10px 20px;
+	border-radius:2px;
+	font-size:14px;
+}
+#overlayicons{
+position: absolute;
+left: -100px;
+top: -1409px;
+height: 3000px;
+width: 42px;
+margin-top: 6.8em;
+}
+#overlayicons:after,#overlayicons:before {
+content: "";
+display: block;
+margin: 0 auto;
+width: 2px;
+height: 50%;
+background: #fff;
+}
+#overlayicons:before{
+margin-top: -3em;
+}
+#overlayicons:after{
+margin-top: 6em;
+}
+.pos-solutions.lead-section, .media-coverage-lead {
+    background-size: cover;
+	color:#ffffff;
+}
+.pos-solutions.pos-quick-service-lead {
+    margin-bottom: 40px;
+}
+.pos-quick-service-lead img.lead-overlay {
+    bottom: -60px;
+	    margin-top: -60px;
+    z-index: 3;
+}
+.post {
+        margin: 20px 0 80px 0;
+    text-align: left;
+}
+.post p {
+    margin-bottom: 20px;
+}
+.post h3 {
+    margin-bottom: 15px;
+}
+.post ul {
+    list-style: disc;
+	    padding-left: 20px;
+}
+.post li {
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.page-template-nav-less h2 {
+    padding: 0 0 10px 0;
+}
+@media screen and (min-width: 770px) {
+  .pos-solutions.pos-quick-service-lead {
+    margin-bottom: 60px;
+}
+.pos-quick-service-lead img.lead-overlay {
+    bottom: -100px;
+	    margin-top: -80px;
+}
+.business-section-generic .section-sub-navigation .container {
+    max-width: none;
+    padding: 0 !important;
+}
+}
+@media screen and (min-width: 860px) {
+	.pos-solutions.pos-quick-service-lead {
+    margin-bottom: 100px;
+}
+.pos-quick-service-lead img.lead-overlay {
+    bottom: -140px;
+	margin-top: -100px;
+}
+	.pos-solutions.lead-section {
+	text-shadow: #000 1px 1px 2px;
+    text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px, rgba(0, 0, 0, 0.4) 0 0 30px;
+}
+.pos-bars-clubs-lead .overlay-image {
+    position: relative;
+    bottom: -40px;
+}
+.pos-foodtruck-lead .overlay-image {
+    position: relative;
+    bottom: -55px;
+}
+}
+@media screen and (max-width: 1336px) { /* view 1 */
+  #happy-hours-split-bills .hover-button {
+	  top: 307px !important;
+  }
+
+  #happy-hours-split-bills .ease-animate {
+	  left:40% !important;
+  }
+  #tabs-management .pos-stacked-lead-graphic {
+	  margin-top: 112px;
+  }
+
+  	#happy-hours-split-bills {
+		padding-bottom: 40%;
+	}
+
+	.pos-solutions .secondary-sub-hover-graphic {
+		right:25% !important;
+		height:34%;
+	}
+	
+	.pos-restaurant-key-features .right-text-pod {
+		width: 300px !important;
+	}
+	
+	.cloud {
+		left:9% !important;
+	}
+	
+	.home-circle {
+		left:25% !important;
+	}
+}
+
+@media screen and (max-width: 1336px) {
+  .container {
+    margin: 0 auto 0 auto;
+    max-width: 860px;
+    padding: 0 40px 0 40px;
+  }
+
+  .login-box .form-etc {
+	  text-align:center;
+  }
+
+	.login-box .forgot-pw {
+		float:none;
+		display:block;
+		margin-top: 20px;
+	}
+
+	.login.full-hero-section {
+		background-position: top right;
+		height: 670px;
+	}
+
+	.login-img-text {
+		top: 170px;
+		right:118px;
+		width: 170px;
+	}
+
+	.login-img-text {
+		font-size:18px;
+	}
+
+  #textarea {
+      top: 60.5px !important;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media screen and (min-width:1336px){
+
+
+  .fs #overlayicons {
+  color: #fff;
+  display: block;
+  height: 3000px;
+  left: 611px;
+  position: fixed;
+  top: 195.891px;
+  width: 42px;
+  z-index: 4;
+  margin: -1430px 0px 0px -480px;
+  /*-webkit-column-rule-color: #fff;
+  -webkit-locale: "en-CA";
+  perspective-origin: 21px 1500px;
+  -webkit-text-emphasis-color: #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-color: #fff;
+  transform-origin: 21px 1500px;
+  border: 0px none #fff;
+  font: normal normal normal normal 10px / 10px Helvetica, 'Lucida Grande', sans-serif;
+  
+  outline: rgb(98, 97, 97) none 0px;
+  -webkit-border-after: 0px none #fff;
+  -webkit-border-before: 0px none #fff;
+  -webkit-border-end: 0px none #fff;
+  -webkit-border-start: 0px none #fff;
+  -webkit-transform-origin: 21px 1500px;*/
+  }/*#overlayicons*/
+
+  .fs #overlayicons:after {
+  color: #fff;
+  content: '';
+  display: block;
+  height: 1500px;
+  width: 2px;
+  margin: 100px 20px 0px;
+  /*-webkit-column-rule-color: #fff;
+  -webkit-locale: "en-CA";
+  perspective-origin: 1px 750px;
+  -webkit-text-emphasis-color: #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-color: #fff;
+  transform-origin: 1px 750px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+  border: 0px none #fff;
+  font: normal normal normal normal 10px / 10px Helvetica, 'Lucida Grande', sans-serif;
+  
+  outline: rgb(98, 97, 97) none 0px;
+  -webkit-border-after: 0px none #fff;
+  -webkit-border-before: 0px none #fff;
+  -webkit-border-end: 0px none #fff;
+  -webkit-border-start: 0px none #fff;
+  -webkit-transform-origin: 1px 750px;*/
+  }/*#overlayicons:after*/
+
+  .fs #overlayicons:before {
+  color: #fff;
+  content: '""';
+  display: block;
+  height: 1500px;
+  width: 2px;
+  margin: -50px 20px 0px;
+  /*-webkit-column-rule-color: #fff;
+  -webkit-locale: "en-CA";
+  perspective-origin: 1px 750px;
+  -webkit-text-emphasis-color: #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-color: #fff;
+  transform-origin: 1px 750px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+  border: 0px none #fff;
+  font: normal normal normal normal 10px / 10px Helvetica, 'Lucida Grande', sans-serif;
+  
+  outline: rgb(98, 97, 97) none 0px;
+  -webkit-border-after: 0px none #fff;
+  -webkit-border-before: 0px none #fff;
+  -webkit-border-end: 0px none #fff;
+  -webkit-border-start: 0px none #fff;
+  -webkit-transform-origin: 1px 750px;*/
+  }
+}
+
+@media screen and (max-width: 1336px) {
+
+
+
+  #textblock {
+        margin: 10px 193px;
+  }
+  #textblockscrollable {
+    width:500px !important;
+  }
+}
+
+@media screen and (max-width:768px){
+  .home-slides-section {
+    /*display: none;*/
+  }
+}
+
+
+@media screen and (max-width: 1336px) {
+  	#videos .container {
+		padding: 0;
+	}
+
+	.business-section-generic .container {
+		padding: 0 40px;
+	}
+	
+
+	
+  #menu {
+	  z-index: 9999;
+  }
+
+
+
+  #textarea {
+      top: 60.5px !important;
+  }
+  .home-hero-lead {
+		padding: 0 40px;
+	}
+	#footer .container { padding: 0 40px; }
+	#calltoaction { text-align:center; }
+	#calltoaction .button { margin-top: 20px !important; }
+
+
+  .home-container {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  .business-section-generic.pos-solutions.pos-stacked-slides .container {
+	  padding: 0 25px;
+  }
+  
+  .pos-restaurant-key-features .right-text-pod {
+	  margin: 180px 0 40px 0 !important;
+  }
+
+	.login.full-hero-section {
+		background-position: top right;
+		height: 600px;
+	}
+
+	.login-img-text {
+		top: 120px;
+		right:108px;
+		width: 150px;
+	}
+
+	.login-img-text p{
+		font-size:17px;
+	}
+}
+
+@media screen and (max-width: 1060px) {
+	#happy-hours-split-bills .text-pod.overlap-text {
+		top:-350px;
+		position:relative;
+	}
+}
+
+@media screen and (max-width: 859px) {
+    .container {
+        margin: 0 auto 0 auto;
+        max-width: 100%;
+        padding: 0 40px 0 0px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+	#happy-hours-split-bills .text-pod.overlap-text {
+		top:-350px;
+		position:relative;
+	}
+
+	.pos-stacked-lead-graphic {
+		margin-top: 0 !important;
+		display:block !important;
+		margin:auto;
+		float:none !important;
+	}
+
+	.hover-container {
+		float:none !important;
+		margin:auto;
+	}
+
+	#happy-hours-split-bills {
+		padding-bottom:0;
+		top: -55px;
+	}
+
+	#happy-hours-split-bills .text-pod.overlap-text {
+		top:0px;
+		margin:0;
+	}
+
+	.hover-button.bobble, #happy-hours-split-bills .hover-button {
+		display:none;
+	}
+
+	#happy-hours-split-bills .ease-animate {
+		display:none !important;
+	}
+
+	.pos-foodtruck-stacked-slides .pos-stacked-slide {
+		margin-top:0 !important;
+	}
+
+	.pos-foodtruck-stacked-slides .centre-text-pod {
+		max-width:100% !important;
+		text-align:center !important;
+	}
+
+	.login.full-hero-section {
+		padding-bottom: 35%;
+	}
+
+	.login-container {
+		width: 100%;
+	}
+
+	.login-box {
+		width:50%;
+	}
+
+	.login-img {
+		float:none;
+		color:#4d4d4f;;
+		position:relative;
+		margin:auto;
+		width:100%;
+	}
+
+	.login-img-text {
+		top:0;
+		right:0;
+		width: 100%;
+		text-align:center;
+	}
+
+	.login-img-text p {
+		font-size:27px;
+		line-height:33px;
+	}
+
+	.login.full-hero-section {
+		background: none;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.container {
+		margin: 0 auto 0 auto;
+		max-width: 100%;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 800px) {
+
+  .container {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+  }
+  #videos .container {
+  padding: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+	#happy-hours-split-bills {
+		top: 0px;
+	}
+
+	#happy-hours-split-bills .text-pod.overlap-text {
+		margin-bottom:50px;
+	}
+}
+.nav-group {
+	display:none;
+}
+#textblock {
+color: #fff;
+height: 306.953px;
+width: 684px;
+margin: 0px 231px;
+/*-webkit-column-rule-color: #fff;
+-webkit-locale: "en-CA";
+perspective-origin: 480px 153.469px;
+-webkit-text-emphasis-color: #fff;
+-webkit-text-fill-color: #fff;
+-webkit-text-stroke-color: #fff;
+transform-origin: 480px 153.469px;
+border: 0px none #fff;
+font: normal normal normal normal 10px / 10px Helvetica, 'Lucida Grande', sans-serif;
+
+outline: rgb(98, 97, 97) none 0px;
+-webkit-border-after: 0px none #fff;
+-webkit-border-before: 0px none #fff;
+-webkit-border-end: 0px none #fff;
+-webkit-border-start: 0px none #fff;
+-webkit-transform-origin: 480px 153.469px;*/
+}/*#textblock*/
+.uberflips a img {
+    width: 40%;
+    max-width: none;
+    margin: 0 1%;
+}
+@media screen and (min-width: 770px) {
+  .uberflips a img {
+	width:auto;
+    max-width: 24%;
+    margin: 0.5%;
+	}
+}
+@media screen and (max-width: 768px) { /* mobile */
+
+	.home .business-section-generic .container {
+		padding:0;
+	}
+
+  .container {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    padding: 0 0px;
+  }
+
+  .business-section-generic {
+	  padding-bottom: 10px;
+  }
+  .home-slide div img{
+	  display:none;
+  }
+  
+  /*.home-slides-section #slide-1 {
+    background-color: #00b8ba;
+}
+.home-slides-section #slide-2 {
+    background-color: #8cc540;
+}
+.home-slides-section #slide-3 {
+    background-color: #7156a5;
+}*/
+
+
+
+
+  .home-slides #scrollablecontainer {
+	    padding: 0;
+    width: 75vw;
+  }
+
+  .home-slides #overlayicons {
+	    left: initial;
+    right: 78.5vw;
+        top: -1542px;
+  }
+  .home-slide-one.home-slides #overlayicons {
+        top: -1385px;
+}
+
+  .home-slides #textblock {
+	      margin: 0 0 0 18vw;
+    width: 82vw;
+  }
+  #textblockscrollable{
+	  max-width:100%;
+  }
+
+  
+
+  .home-slides #textarea {
+	  top:0;
+  }
+  .home-slides .text-pod p {
+        font-size: 18px;
+}
+
+  .home-slide img {
+	  margin: 0 !important;
+  }
+  .nav-group {
+	  display:none;
+  }
+
+  #videos {  }
+  
+
+	.business-section-generic .container {
+		padding: 0 5%;
+	}
+	.business-section-generic.try-tb-lead .container {
+		padding: 0 5%;
+	}
+	.business-section-generic.referral-refer .container {
+		padding: 0 5%;
+	}
+
+	#happy-hours-split-bills .text-pod {
+		margin-bottom:40px;
+	}
+
+	.login-box {
+		width:80%;
+	}
+
+	.login.full-hero-section {
+		padding-bottom: 45%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.login.full-hero-section {
+		padding-bottom: 65%;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.login.full-hero-section {
+		padding-bottom: 100%;
+	}
+	.register {
+		margin-bottom: 0;
+	}
+	.register p {
+		margin-bottom: 40px;
+	}
+}
+
+.no-touch #videos a:hover {
+  text-decoration: underline;
+}
+
+
+
+.lang, .lang:hover {
+  padding: 7px 0 5px 30px;
+  background: transparent url("../images/earth-icon-lang.png") no-repeat left 50%;
+  margin-left: 25px;
+  display:none;
+}
+footer #notices .cell-right a.lang{
+	display:none
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell, #hardware-table .image-cells, #hardware-table .text-cells {
+  display: table-cell;
+  /* General responsive helpers - override when necessary */
+}
+@media screen and (min-width: 0px) {
+  .cell, #hardware-table .image-cells, #hardware-table .text-cells {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 770px) {
+  .cell, #hardware-table .image-cells, #hardware-table .text-cells {
+    width: 50%;
+    display: table-cell;
+  }
+}
+
+.stack-auto {
+  z-index: auto !important;
+}
+
+@media screen and (min-width: 860px) {
+  .floating-menu {
+    padding-top: 115px;
+  }
+}
+
+/* footer
+=========== */
+footer {
+  background-color: #464646;
+  padding: 48px 0 48px 0;
+  margin-top: 30px;
+  color: #c1c1c1;
+  font-size: 14px;
+  position: relative;
+  clear: both;
+  z-index: 5;
+}
+.page-template-try-touchbistro footer {
+  margin-top:0px;
+}
+footer a, #footer a, footer a:visited, #footer a:visited {
+  color: #c1c1c1;
+}
+footer a:hover, footer a:active, #footer a:hover, #footer a:active {
+  color: #b69859;
+  text-decoration: underline;
+}
+footer .table {
+  position: relative;
+}
+footer .footer-sections {
+  position: relative;
+}
+footer .footer-section {
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+}
+footer .footer-section ul li {
+  padding-bottom: 15px;
+}
+footer .footer-section .footer-headings {
+  color: #7c7c7c;
+  display: block;
+  font-size: 16px;
+  padding: 0 0 15px 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #7c7c7c;
+}
+footer .footer-section .get-started a, footer .footer-section .get-started li {
+  font-weight: bold;
+  font-size: 15px;
+}
+footer .footer-section .get-started a, footer .footer-section .get-started li.call-us {
+    padding-bottom: 5px;
+}
+footer .footer-section .get-started a, footer .footer-section .get-started li.phone {
+    font-weight: 400;
+}
+@media screen and (min-width: 0px) {
+  footer .footer-section {
+    padding: 0 15px 30px 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 770px) {
+  footer .footer-section {
+    width: 45%;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1337px) {
+  footer .footer-section {
+    width: 23%;
+  }
+}
+footer #notices {
+  border-top: 1px solid #7c7c7c;
+  padding-top: 8px;
+  margin-top: 20px;
+}
+footer #notices .cell, footer #notices #hardware-table .image-cells, #hardware-table footer #notices .image-cells, footer #notices #hardware-table .text-cells, #hardware-table footer #notices .text-cells {
+  vertical-align: top;
+  padding: 20px 15px 20px 0;
+}
+@media screen and (min-width: 0px) {
+  footer #notices .cell, footer #notices #hardware-table .image-cells, #hardware-table footer #notices .image-cells, footer #notices #hardware-table .text-cells, #hardware-table footer #notices .text-cells {
+    padding-right: 0;
+    display: block;
+  }
+  footer #notices .cell img, footer #notices #hardware-table .image-cells img, #hardware-table footer #notices .image-cells img, footer #notices #hardware-table .text-cells img, #hardware-table footer #notices .text-cells img {
+    display: block;
+  }
+  footer #notices .cell .company-logo, footer #notices #hardware-table .image-cells .company-logo, #hardware-table footer #notices .image-cells .company-logo, footer #notices #hardware-table .text-cells .company-logo, #hardware-table footer #notices .text-cells .company-logo {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 770px) {
+  footer #notices .cell, footer #notices #hardware-table .image-cells, #hardware-table footer #notices .image-cells, footer #notices #hardware-table .text-cells, #hardware-table footer #notices .text-cells {
+    width: 50%;
+    display: table-cell;
+  }
+  footer #notices .cell img, footer #notices #hardware-table .image-cells img, #hardware-table footer #notices .image-cells img, footer #notices #hardware-table .text-cells img, #hardware-table footer #notices .text-cells img {
+    display: inline;
+  }
+  footer #notices .cell .company-logo, footer #notices #hardware-table .image-cells .company-logo, #hardware-table footer #notices .image-cells .company-logo, footer #notices #hardware-table .text-cells .company-logo, #hardware-table footer #notices .text-cells .company-logo {
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 0px) {
+  footer #notices .cell-right {
+    text-align: left;
+  }
+  footer #notices .cell-right a {
+    margin: 0 0 10px 0;
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 770px) {
+  footer #notices .cell-right {
+    text-align: right;
+  }
+  footer #notices .cell-right a {
+    margin-left: 15px;
+    width: auto;
+    display: inline;
+  }
+}
+footer .car {
+  position: absolute;
+  right: 0;
+  bottom: -48px;
+}
+
+@media screen and (min-width: 0px) {
+  footer .car {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) {
+  footer .car {
+    display: block;
+  }
+}
+
+footer .socialicons {
+  display: inline-block;
+
+}
+footer .sicon {
+  background-color: #7c7c7c;
+  border-radius: 9px;
+  height: 18px;
+  width: 18px;
+  display: block;
+  margin-left: 9px;
+  cursor: pointer;
+  color: #464646;
+  float: left;
+}
+footer .sicon .fa {
+  margin-top: 2px;
+margin-left: 4px;
+font-size: 13px;
+}
+footer .facebook .fa {
+  margin-top: 3px;
+margin-left: 6px;
+font-size: 13px;
+}
+footer .twitter .fa {
+  margin-top: 3px;
+margin-left: 3px;
+font-size: 13px;
+
+}
+footer .instagram .fa {
+  margin-top: 3px;
+margin-left: 3.5px;
+font-size: 13px;
+}
+footer .youtube .fa {
+  margin-top: 2px;
+margin-left: 3.5px;
+font-size: 13px;
+}
+@media screen and (min-width: 860px) {
+
+footer .fa:hover {
+  opacity: 0.6;
+}
+
+}
+@media screen and (min-width: 0px) {
+  #capture {
+    display: block;
+  }
+}
+@media screen and (min-width: 860px) {
+  #capture {
+    display: none;
+  }
+}
+
+.page-template-setup-and-implementation footer {
+  margin-top: 0;
+}
+
+/* navigation
+============= */
+/* Wordpress generates the lists and nested lists depending on the menu structure in admin.
+	What is DOES NOT generate:;
+
+	1) <div class="nav-column primary-column"> <div class="nav-column secondary-column"> <div class="nav-column third-column"> - the nav columns in the mega menu
+	2) The classes that control the single and mega menu on the respective li: single-column-dropdown / mega-menu-dropdown
+	3) <ul class="mobile-menu-extras">  - this is the extra mobile menu that shows up at tablet and below
+
+We need to allow TB to modify the menu, but have some control over the code WP generates */
+/* top strip nav */
+#initial-navigation {
+  background-color: #464646;
+  text-align: right;
+}
+@media screen and (min-width: 0px) {
+  #initial-navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 860px) {
+  #initial-navigation {
+    display: block;
+  }
+}
+@media screen and (min-width: 860px) {
+  #initial-navigation .menu-initial-menu-container {
+    display: inline-block;
+  }
+  #initial-navigation .menu-initial-menu-container a {
+    color: #fff; /*Jon*/
+    display: inline-block;
+    padding: 12px 8px;
+    font-size: 90%;
+  }
+  #initial-navigation .menu-initial-menu-container a:hover {
+    color: #ffffff;
+    background-color: #707070;
+  }
+  #initial-navigation .menu-initial-menu-container ul {
+    text-align: right;
+  }
+  #initial-navigation .menu-initial-menu-container ul li {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .mobile-burger-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vw;
+    width: 20vw;
+  }
+  .mobile-burger-nav img {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.logo {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 32vw;
+    max-width: 186px;
+    height: 100%;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-bottom: 5px;
+}
+}
+
+@media screen and (min-width: 860px) {
+  .mobile-burger-nav {
+    display: none;
+  }
+}
+
+/* main nav - the nav html5 tag */
+@media screen and (min-width: 0px) {
+  #menu {
+    /* controls mobile/tablet nav display */
+    position: absolute;
+    width: 80vw;
+    left: 0;
+    top: 0px;
+    height: 1000px;
+    background: #fff;
+    z-index: 99999;
+  }
+
+  .main-menu.menu-is-active {
+	border-bottom: 2px solid #b29a5c;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  #menu {
+    background: none;
+    float: right;
+    height: 100%;
+    left: auto;
+    position: relative;
+    text-align: right;
+    width: auto !important;
+	border-bottom:none;
+  }
+}
+
+/* wordpress generated container */
+.menu-main-menu-container {
+  text-align: right;
+}
+@media screen and (min-width: 0px) {
+  .menu-main-menu-container .mobile-menu-close-toggle span {
+    padding: 0;
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    background: #787878 url("../images/resp-menu-cross.png") no-repeat center center;
+  }
+  .menu-main-menu-container .mobile-menu-close-toggle {
+    position: absolute;
+    /*right: -72px;*/
+    top: 0;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.62);
+  }
+  .menu-main-menu-container {
+    padding-top: 20vw;
+}
+}
+@media screen and (min-width: 860px) {
+  .menu-main-menu-container .mobile-menu-close-toggle {
+    display: none;
+  }
+}
+.menu-main-menu-container .mobile-menu-back-toggle {
+  background: transparent url("../images/left-menu-arrow.png") no-repeat left 50%;
+  color: #fffefe;
+  padding-left: 20px;
+  position: absolute;
+  left: 37px;
+  top: 0;
+  display: none;
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 18px;
+  font-weight: 300;
+      line-height: 20vw;
+}
+@media screen and (max-width: 859px) {
+  /*.menu-main-menu-container {
+    background: #b29a5c url("../images/tb-mobile-logo.png") no-repeat center 6px;
+    padding-top: 67px;
+    display: block;
+  }*/
+  .menu-main-menu-container:before {
+    content: "";
+    height: 20vw;
+    width: 80vw;
+    display: block;
+    top: 0;
+    position: absolute;
+    background: #b29a5c url("../images/tb-mobile-logo.png") no-repeat center center;
+	}
+}
+@media screen and (min-width: 860px) {
+  .menu-main-menu-container {
+    padding-top: 0;
+    height: auto;
+    background: none;
+  }
+}
+@media screen and (min-width: 441px) {
+.lead-section, .try-tb-lead {
+    margin-top: 10vw;
+	}
+  #menu {
+        width: 90vw;
+  }
+  .menu-main-menu-container .mobile-menu-close-toggle span {
+	    width: 10vw;
+    height: 10vw;
+	}
+
+  .mobile-burger-nav {
+      height: 10vw;
+    width: 10vw;
+  }
+  .menu-main-menu-container:before {
+    height: 10vw;
+    width: 90vw;
+	}
+  .menu-main-menu-container {
+    padding-top: 10vw;
+}
+.menu-main-menu-container .mobile-menu-back-toggle {
+    line-height: 10vw;
+}
+  
+}
+
+@media screen and (min-width: 860px) {
+
+  .menu-main-menu-container {
+    padding-top:35px;
+  }
+  .lead-section, .try-tb-lead {
+    margin-top: 0;
+	}
+
+}
+
+
+.menu-main-menu-container .menu {
+  font-size: 18px;
+  cursor: default;
+  position: relative;
+  z-index: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+.menu-main-menu-container .menu a, .menu-main-menu-container .menu .more > div, .menu-main-menu-container .menu .single-column-dropdown > div {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  color: #252525;
+  font-size: 95%; /*jon*/
+  font-weight: 300;
+  z-index: 2;
+}
+.menu-main-menu-container .menu a:hover, .menu-main-menu-container .menu a:active, .menu-main-menu-container .menu a:visited {
+  background: none;
+}
+
+
+
+
+@media screen and (min-width: 860px) {
+  .menu-main-menu-container .menu a:hover {
+    color: #b69859;
+  }
+}
+@media screen and (min-width: 0px) {
+  .menu-main-menu-container .menu {
+    background: #fff;
+    display: block;
+    padding: 5px 0 66px;
+  }
+  .menu-main-menu-container .menu a, .menu-main-menu-container .menu .more > div, .menu-main-menu-container .menu .single-column-dropdown > div {
+    display: block;
+    padding: 23px 0 5px 35px;
+  }
+  .menu-main-menu-container .menu > li {
+    display: block;
+  }
+  .menu-main-menu-container .menu .more, .menu-main-menu-container .menu .pos {
+    background: transparent url("../images/right-gold-arrow.png") no-repeat scroll 90% 22px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 860px) {
+  .logo {
+    width: auto;
+	height:auto;
+	position:relative;
+  }
+  .logo img {
+    width: auto;
+    height: auto;
+	margin:0;
+	padding: 10px 0 0 0;
+	position:relative;
+  }
+.menu-main-menu-container .menu .more, .menu-main-menu-container .menu .pos {
+    background: none;
+}
+}
+@media screen and (min-width: 860px) {
+  .menu-main-menu-container .menu {
+    background: none;
+    padding: 0 0 0;
+    display: inline-block;
+  }
+  .menu-main-menu-container .menu .more {
+    padding-right: 28px;
+    background: transparent url("../images/grey-arrow-down.png") no-repeat scroll right 10%;
+  }
+  .menu-main-menu-container .menu a, .menu-main-menu-container .menu .more > div, .menu-main-menu-container .menu .single-column-dropdown > div {
+	    padding: 0 10px 20px; /*jon*/
+  }
+  .menu-main-menu-container .menu > li {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 0px) {
+  .menu-main-menu-container .sub-menu a {
+    display: block;
+    padding: 20px 0 5px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    text-transform: none;
+    color: #252525;
+	font-weight: 300;
+  }
+}
+@media screen and (min-width: 860px) {
+  .menu-main-menu-container .sub-menu a {
+    
+    color: #363636;
+  }
+}
+
+@media screen and (min-width: 860px) and (max-width: 1336px){
+  .menu-main-menu-container .menu a, .menu-main-menu-container .menu .more > div, .menu-main-menu-container .menu .single-column-dropdown > div {
+    font-family: "Gotham SSm A", "Gotham SSm B";
+    color: #252525;
+    font-size: 15px;
+    font-weight: 300;
+    z-index: 2;
+    padding: 0 7px 17px;
+  }
+  .top-nav .left-nav.desktop>li>a {
+    font-size: .8em;
+    padding: 3px 6px;
+}
+}
+
+
+/* Position the sub menus off screen and add a transition to them for when they
+   are translated back in. Strip if desktop */
+@media screen and (min-width: 0px) {
+  .main-menu, .single-column-dropdown .sub-menu, .mega-menu-dropdown-is-active .sub-menu {
+    -moz-transform: translateX(-130%);
+    -ms-transform: translateX(-130%);
+    -webkit-transform: translateX(-130%);
+    transform: translateX(-130%);
+  }
+}
+@media screen and (min-width: 860px) {
+  .main-menu, .single-column-dropdown .sub-menu, .mega-menu-dropdown-is-active .sub-menu {
+    transform: none;
+    transition: none;
+    transition-duration: none;
+    transition-timing-function: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+}
+@media screen and (max-width: 859px){
+.main-menu {
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s, 0s;
+  -o-transition-duration: 0.3s, 0s;
+  -webkit-transition-duration: 0.3s, 0s;
+  transition-duration: 0.3s, 0s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+}
+
+
+/* If the menu is active, slide the menus in */
+.menu-is-active, .single-dropdown-is-active .sub-menu, .mega-dropdown-is-active .sub-menu {
+  /*transform: translateX(0);*/
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s, 0s;
+  -o-transition-duration: 0.3s, 0s;
+  -webkit-transition-duration: 0.3s, 0s;
+  transition-duration: 0.3s, 0s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* For the more mega, transition the menu out. We do this because part of the menu is already
+   showing in the main tree, and we must hide them and fade the others in */
+.mega-dropdown-is-transitioning .sub-menu {
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  /*transform: translateX(-100%);*/
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* This is needed to overlay the mega sub menu. Suggest we improve by hiding the other menu altogether */
+.mega-dropdown-is-active .sub-menu {
+  top: 0;
+}
+
+/* Both sub-menus are absolute positioned in the relative container (the UL menu-main-menu) */
+@media screen and (min-width: 0px) {
+  .single-column-dropdown .sub-menu, .mega-menu-dropdown .sub-menu {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 600;
+    background: #fff;
+  }
+}
+@media screen and (min-width: 860px) {
+  .single-column-dropdown .sub-menu, .mega-menu-dropdown .sub-menu {
+    transform: none;
+    top: auto;
+    height: auto;
+  }
+}
+
+/* These are hidden in the main tree, but reveal when the MORE link is clicked */
+@media screen and (min-width: 0px) {
+  .mega-menu-dropdown .primary-column, .mega-menu-dropdown .secondary-column {
+    display: none;
+  }
+}
+@media screen and (min-width: 860px) {
+  .mega-menu-dropdown .primary-column, .mega-menu-dropdown .secondary-column {
+    display: block;
+  }
+}
+
+/* This class gets added to #menu so we can make some visual tweaks for the single menu drops */
+.single-is-active .mega-menu-dropdown .sub-menu {
+  display: none;
+}
+.single-is-active .single-column-dropdown .sub-menu {
+  top: 0;
+}
+
+/* When the mega menu is active, let's display the columns we need to */
+@media screen and (min-width: 0px) {
+  .mega-dropdown-is-active .primary-column, .mega-dropdown-is-active .secondary-column {
+    display: block;
+  }
+}
+@media screen and (min-width: 860px) {
+  .mega-dropdown-is-active .primary-column, .mega-dropdown-is-active .secondary-column {
+    display: none;
+  }
+}
+
+/* When the mega is active, we hide these things */
+.mega-dropdown-is-active .mobile-menu-extras, .mega-dropdown-is-active .getting-started {
+  display: none;
+}
+
+/* This is the li dropdown that contains the single ul */
+@media screen and (min-width: 860px) {
+  .single-column-dropdown {
+    /* controls single col nav */
+    position: relative;
+  }
+}
+@media screen and (min-width: 860px) {
+  .single-column-dropdown .sub-menu {
+    /*padding-top: 30px;*/
+    display: block;
+    padding: 0;
+    left: 0;
+    width: 289px;
+    height: auto;
+	margin:0;
+  }
+}
+.single-column-dropdown .sub-menu li {
+  width: 100%;
+}
+@media screen and (min-width: 860px) {
+  .single-column-dropdown .sub-menu a {
+    padding: 16px !important;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .single-column-dropdown .sub-menu a:hover {
+    background: #b29a5c;
+    color: #ffffff;
+  }
+}
+
+/* This contains all ul sub-menu styles for the mega menu */
+@media screen and (min-width: 0px) {
+  .mega-menu-dropdown .sub-menu {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .mega-menu-dropdown .sub-menu {
+    margin: 0;
+    right: 0;
+    padding: 0 0 20px 35px;
+    width: 626px;
+    min-height: 296px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .mega-menu-dropdown .sub-menu a {
+    padding: 0 0 12px 0 !important;
+  }
+}
+
+.mega-dropdown-is-active .sub-menu {
+  margin-top: 0;
+}
+
+/* sub menu is the ul - common styles */
+.sub-menu a {
+  display: block;
+}
+.sub-menu li {
+  display: block;
+}
+@media screen and (min-width: 0px) {
+  .sub-menu .heading {
+    padding: 20px 0 5px 35px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #252525;
+    font-family: "Gotham SSm A", "Gotham SSm B";
+  }
+}
+@media screen and (min-width: 860px) {
+  .sub-menu .heading {
+    font-size: 14px;
+    color: #c5c5c5;
+    padding: 10px 0 10px 0;
+    color: #b0b0b0;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 0px) {
+  .sub-menu .heading span {
+    border-bottom: 1px solid #252525;
+    display: block;
+    width: 85%;
+    padding-bottom: 8px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .sub-menu .heading span {
+    padding: 0;
+    border: none;
+    width: auto;
+  }
+}
+@media screen and (min-width: 0px) {
+  .sub-menu .mobile-menu-extras a {
+    padding: 20px 0 5px 35px !important;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 860px) {
+  .sub-menu {
+    position: absolute;
+    /*border: 1px solid #d8d8d8;*/
+    /* this is desktop only transitions */
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.1s, 0s;
+    -o-transition-duration: 0.1s, 0s;
+    -webkit-transition-duration: 0.1s, 0s;
+    transition-duration: 0.1s, 0s;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    visibility: hidden;
+    background: #fff;
+    font-size: 14px;
+    opacity: 0;
+    text-transform: none;
+    width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.2) 1px 3px 3px;
+  }
+  .main-navigation {
+	      box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+	  background-color:#ffffff;
+	  height:73px;
+  }
+  .sub-menu .mobile-menu-extras {
+    display: none;
+  }
+}
+
+.menu > li > a {
+  position: relative;
+  z-index: 510;
+}
+
+/* this controls the visibility on hover of the menus */
+@media screen and (min-width: 860px) {
+  .single-column-dropdown:hover > .sub-menu,
+  .mega-menu-dropdown:hover > .sub-menu {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .nav-column {
+    float: left;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .primary-column, .secondary-column, .third-column {
+    min-height: 325px;
+	position:relative;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .primary-column {
+    width: 32%;
+    padding-right: 13px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .secondary-column {
+    padding-right: 22px;
+    padding-left: 19px;
+    width: 26%;
+    display: block;
+  }
+}
+
+.third-column {
+  position: relative;
+}
+@media screen and (min-width: 0px) {
+  .third-column {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 860px) {
+  .third-column {
+    padding-right: 0;
+    padding-left: 19px;
+    display: block;
+    width: 24%;
+  }
+  .secondary-column:before, .third-column:before {
+    content: '';
+    width: 1px;
+    height: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    display: block;
+    background-color: #d8d8d8;
+}
+}
+@media screen and (min-width: 0px) {
+  .third-column .third-column-contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 860px) {
+  .third-column .third-column-contact {
+    display: block;
+  }
+}
+@media screen and (min-width: 0px) {
+  .third-column .getting-started {
+    padding: 35px 0 3px 60px;
+    border-top: 1px solid #b0b0b0;
+    border-bottom: 1px solid #b0b0b0;
+  }
+}
+@media screen and (min-width: 860px) {
+  .third-column .getting-started {
+    position: relative;
+    top: 45px;
+    border: none;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  .third-column .getting-started .heading {
+    display: none;
+  }
+}
+@media screen and (min-width: 860px) {
+  .third-column .getting-started .heading {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  .third-column .getting-started a {
+    color: #b69859 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0 30px 0 !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .third-column .getting-started a:hover{
+	  color: #8A7343 !important;
+  }
+}
+@media screen and (min-width: 860px) {
+  .third-column .getting-started a {
+    font-size: 12px;
+    border-bottom: 1px solid #aaaaaa;
+        padding: 12px 0 !important;
+  }
+  .third-column .getting-started li:last-child a {
+	  border:none;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .sticky-section-sub-navigation .section-sub-navigation.affix, .sticky-section-sub-navigation .affix.section-sub-hover-navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  #top-link-block {
+    display: none;
+  }
+}
+@media screen and (min-width: 860px) {
+  #top-link-block {
+    display: block;
+	    bottom: -50px;
+    display: block;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    z-index: 99999;
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+}
+#top-link-block a {
+  display: none;
+}
+@media screen and (min-width: 860px) {
+  #top-link-block.affix {
+    bottom: 38px;
+  }
+  #top-link-block .fa-chevron-up {
+    margin-top: 7px;
+	text-shadow: rgba(0, 0, 0, 0.1) 0 1px;
+  }
+  #top-link-block a {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: normal;
+    height: 44px;
+    width: 44px;
+    display: block;
+    color: #fff;
+    background-color: rgba(120, 120, 120, 0.25);
+    border: 2px rgba(255, 255, 255, 0.11) solid;
+  }
+}
+@media screen and (max-width: 859px) {
+	body.lab_top_menu .top-nav, body.lab_top_menu html.touch .top-nav {
+    height: 48px !important;
+}
+.main {
+    margin-top: 50px;
+}
+#hubs-container {
+    margin-top: 20px;
+}
+a.mobile-burger-nav {
+    display: none;
+}
+}

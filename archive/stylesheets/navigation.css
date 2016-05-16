@@ -1,0 +1,712 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+/* navigation
+============= */
+/* Wordpress generates the lists and nested lists depending on the menu structure in admin.
+	What is DOES NOT generate:;
+
+	1) <div class="nav-column primary-column"> <div class="nav-column secondary-column"> <div class="nav-column third-column"> - the nav columns in the mega menu
+	2) The classes that control the single and mega menu on the respective li: single-column-dropdown / mega-menu-dropdown
+	3) <ul class="mobile-menu-extras">  - this is the extra mobile menu that shows up at tablet and below
+
+We need to allow TB to modify the menu, but have some control over the code WP generates */
+/* top strip nav */
+#initial-navigation {
+  background-color: #464646;
+  text-align: right;
+}
+@media screen and (min-width: 320px) {
+  #initial-navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #initial-navigation {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #initial-navigation .menu-initial-menu-container {
+    display: inline-block;
+  }
+  #initial-navigation .menu-initial-menu-container a {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 13px;
+  }
+  #initial-navigation .menu-initial-menu-container a:hover {
+    color: #ffffff;
+    background-color: #707070;
+  }
+  #initial-navigation .menu-initial-menu-container ul {
+    text-align: right;
+  }
+  #initial-navigation .menu-initial-menu-container ul li {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .mobile-burger-nav {
+    position: absolute;
+    left: 23px;
+    top: 23px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mobile-burger-nav {
+    display: none;
+  }
+}
+
+/* main nav - the nav html5 tag */
+@media screen and (min-width: 320px) {
+  #menu {
+    /* controls mobile/tablet nav display */
+    position: absolute;
+    width: 77%;
+    left: 0;
+    top: 67px;
+    height: 847px;
+    background: #fff;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  #menu {
+    top: 74px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #menu {
+    background: none;
+    float: right;
+    height: 100%;
+    left: auto;
+    position: relative;
+    text-align: right;
+    top: 25px;
+    width: auto;
+  }
+}
+
+/* wordpress generated container */
+.menu-main-menu-container {
+  text-align: right;
+}
+@media screen and (min-width: 320px) {
+  .menu-main-menu-container .mobile-menu-close-toggle span {
+    padding: 25px 36px 24px;
+    background: #787878 url("../images/resp-menu-cross.png") no-repeat center center;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu-main-menu-container .mobile-menu-close-toggle {
+    position: absolute;
+    right: -72px;
+    top: 26px;
+    height: 822px;
+    background-color: rgba(0, 0, 0, 0.62);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-main-menu-container .mobile-menu-close-toggle {
+    display: none;
+  }
+}
+.menu-main-menu-container .mobile-menu-back-toggle {
+  background: transparent url("../images/left-menu-arrow.png") no-repeat left 50%;
+  color: #fffefe;
+  padding-left: 20px;
+  position: absolute;
+  left: 37px;
+  top: 23px;
+  display: none;
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 18px;
+  font-weight: 300;
+}
+@media screen and (min-width: 320px) {
+  .menu-main-menu-container {
+    background: #b29a5c url("../images/tb-mobile-logo.png") no-repeat center 6px;
+    padding-top: 67px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-main-menu-container {
+    padding-top: 0;
+    height: auto;
+    background: none;
+  }
+}
+.menu-main-menu-container .menu {
+  font-size: 18px;
+  cursor: default;
+  position: relative;
+  z-index: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+.menu-main-menu-container .menu a {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  color: #252525;
+  font-size: 18px;
+  font-weight: 300;
+}
+.menu-main-menu-container .menu a:hover, .menu-main-menu-container .menu a:active, .menu-main-menu-container .menu a:visited {
+  background: none;
+}
+@media screen and (min-width: 1024px) {
+  .menu-main-menu-container .menu a:hover {
+    color: #b69859;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu-main-menu-container .menu {
+    background: #fff;
+    display: block;
+    padding: 5px 0 66px;
+  }
+  .menu-main-menu-container .menu a {
+    display: block;
+    padding: 20px 0 5px 35px;
+  }
+  .menu-main-menu-container .menu > li {
+    display: block;
+  }
+  .menu-main-menu-container .menu .more, .menu-main-menu-container .menu .pos {
+    background: transparent url("../images/right-gold-arrow.png") no-repeat scroll 209px 19px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-main-menu-container .menu {
+    background: none;
+    padding: 0 0 0;
+    display: inline-block;
+  }
+  .menu-main-menu-container .menu .more {
+    padding-right: 28px;
+    background: transparent url("../images/grey-arrow-down.png") no-repeat scroll right 23%;
+  }
+  .menu-main-menu-container .menu a {
+    padding: 0 8px 20px;
+  }
+  .menu-main-menu-container .menu > li {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu-main-menu-container .sub-menu a {
+    display: block;
+    padding: 20px 0 5px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: none;
+    color: #252525;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-main-menu-container .sub-menu a {
+    font-weight: 300;
+    color: #363636;
+  }
+}
+
+/* Position the sub menus off screen and add a transition to them for when they
+   are translated back in. Strip if desktop */
+@media screen and (min-width: 320px) {
+  .main-menu, .single-column-dropdown .sub-menu, .mega-menu-dropdown-is-active .sub-menu {
+    -moz-transform: translateX(-130%);
+    -ms-transform: translateX(-130%);
+    -webkit-transform: translateX(-130%);
+    transform: translateX(-130%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-menu, .single-column-dropdown .sub-menu, .mega-menu-dropdown-is-active .sub-menu {
+    transform: none;
+    transition: none;
+    transition-duration: none;
+    transition-timing-function: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+}
+
+.main-menu {
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s, 0s;
+  -o-transition-duration: 0.3s, 0s;
+  -webkit-transition-duration: 0.3s, 0s;
+  transition-duration: 0.3s, 0s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* If the menu is active, slide the menus in */
+.menu-is-active, .single-dropdown-is-active .sub-menu, .mega-dropdown-is-active .sub-menu {
+  /*transform: translateX(0);*/
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s, 0s;
+  -o-transition-duration: 0.3s, 0s;
+  -webkit-transition-duration: 0.3s, 0s;
+  transition-duration: 0.3s, 0s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* For the more mega, transition the menu out. We do this because part of the menu is already
+   showing in the main tree, and we must hide them and fade the others in */
+.mega-dropdown-is-transitioning .sub-menu {
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  /*transform: translateX(-100%);*/
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* This is needed to overlay the mega sub menu. Suggest we improve by hiding the other menu altogether */
+.mega-dropdown-is-active .sub-menu {
+  top: 0;
+}
+
+/* Both sub-menus are absolute positioned in the relative container (the UL menu-main-menu) */
+@media screen and (min-width: 320px) {
+  .single-column-dropdown .sub-menu, .mega-menu-dropdown .sub-menu {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 600;
+    background: #fff;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .single-column-dropdown .sub-menu, .mega-menu-dropdown .sub-menu {
+    transform: none;
+    top: auto;
+    height: auto;
+  }
+}
+
+/* These are hidden in the main tree, but reveal when the MORE link is clicked */
+@media screen and (min-width: 320px) {
+  .mega-menu-dropdown .primary-column, .mega-menu-dropdown .secondary-column {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mega-menu-dropdown .primary-column, .mega-menu-dropdown .secondary-column {
+    display: block;
+  }
+}
+
+/* This class gets added to #menu so we can make some visual tweaks for the single menu drops */
+.single-is-active .mega-menu-dropdown .sub-menu {
+  display: none;
+}
+.single-is-active .single-column-dropdown .sub-menu {
+  top: 0;
+}
+
+/* When the mega menu is active, let's display the columns we need to */
+@media screen and (min-width: 320px) {
+  .mega-dropdown-is-active .primary-column, .mega-dropdown-is-active .secondary-column {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mega-dropdown-is-active .primary-column, .mega-dropdown-is-active .secondary-column {
+    display: none;
+  }
+}
+
+/* When the mega is active, we hide these things */
+.mega-dropdown-is-active .mobile-menu-extras, .mega-dropdown-is-active .getting-started {
+  display: none;
+}
+
+/* This is the li dropdown that contains the single ul */
+@media screen and (min-width: 1024px) {
+  .single-column-dropdown {
+    /* controls single col nav */
+    position: relative;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .single-column-dropdown .sub-menu {
+    padding-top: 30px;
+    display: block;
+    padding: 0;
+    left: 0;
+    top: 38px;
+    width: 289px;
+    height: auto;
+  }
+}
+.single-column-dropdown .sub-menu li {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .single-column-dropdown .sub-menu a {
+    padding: 16px !important;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .single-column-dropdown .sub-menu a:hover {
+    background: #b29a5c;
+    color: #ffffff;
+  }
+}
+
+/* This contains all ul sub-menu styles for the mega menu */
+@media screen and (min-width: 320px) {
+  .mega-menu-dropdown .sub-menu {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mega-menu-dropdown .sub-menu {
+    margin: 0;
+    right: 0;
+    padding: 20px 0 20px 35px;
+    width: 626px;
+    min-height: 296px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mega-menu-dropdown .sub-menu a {
+    padding: 0 0 15px 0 !important;
+  }
+}
+
+.mega-dropdown-is-active .sub-menu {
+  margin-top: 0;
+}
+
+/* sub menu is the ul - common styles */
+.sub-menu a {
+  display: block;
+}
+.sub-menu li {
+  display: block;
+}
+@media screen and (min-width: 320px) {
+  .sub-menu .heading {
+    padding: 20px 0 5px 35px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #252525;
+    font-family: "Gotham SSm A", "Gotham SSm B";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sub-menu .heading {
+    font-size: 14px;
+    color: #c5c5c5;
+    padding: 0 0 10px 0;
+    color: #b0b0b0;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 320px) {
+  .sub-menu .heading span {
+    border-bottom: 1px solid #252525;
+    display: block;
+    width: 85%;
+    padding-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sub-menu .heading span {
+    padding: 0;
+    border: none;
+    width: auto;
+  }
+}
+@media screen and (min-width: 320px) {
+  .sub-menu .mobile-menu-extras a {
+    padding: 20px 0 5px 35px !important;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sub-menu {
+    position: absolute;
+    border: 1px solid #d8d8d8;
+    /* this is desktop only transitions */
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.1s, 0s;
+    -o-transition-duration: 0.1s, 0s;
+    -webkit-transition-duration: 0.1s, 0s;
+    transition-duration: 0.1s, 0s;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    visibility: hidden;
+    background: #fff;
+    font-size: 14px;
+    opacity: 0;
+    text-transform: none;
+    width: 100%;
+  }
+  .sub-menu .mobile-menu-extras {
+    display: none;
+  }
+}
+
+.menu > li > a {
+  position: relative;
+  z-index: 510;
+}
+
+/* this controls the visibility on hover of the menus */
+@media screen and (min-width: 1024px) {
+  .single-column-dropdown:hover > .sub-menu,
+  .mega-menu-dropdown:hover > .sub-menu {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-column {
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .primary-column, .secondary-column, .third-column {
+    min-height: 282px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .primary-column {
+    width: 32%;
+    padding-right: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .secondary-column {
+    border-left: 1px solid #d8d8d8;
+    padding-right: 22px;
+    padding-left: 19px;
+    width: 26%;
+    display: block;
+  }
+}
+
+.third-column {
+  position: relative;
+}
+@media screen and (min-width: 320px) {
+  .third-column {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .third-column {
+    border-left: 1px solid #d8d8d8;
+    padding-right: 0;
+    padding-left: 19px;
+    display: block;
+    width: 24%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .third-column .third-column-contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .third-column .third-column-contact {
+    display: block;
+  }
+}
+@media screen and (min-width: 320px) {
+  .third-column .getting-started {
+    padding: 35px 0 3px 60px;
+    border-top: 1px solid #b0b0b0;
+    border-bottom: 1px solid #b0b0b0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .third-column .getting-started {
+    position: relative;
+    top: 65px;
+    border: none;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .third-column .getting-started .heading {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .third-column .getting-started .heading {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .third-column .getting-started a {
+    color: #b69859 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0 30px 0 !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .third-column .getting-started a {
+    font-size: 12px;
+    border-bottom: 1px solid #a1a1a1;
+    padding: 12px 0 16px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sticky-section-sub-navigation .section-sub-navigation.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #top-link-block {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #top-link-block {
+    display: block;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+}
+#top-link-block a {
+  display: none;
+}
+
+#top-link-block.affix-top {
+  -moz-transform: translateY(250px);
+  -ms-transform: translateY(250px);
+  -webkit-transform: translateY(250px);
+  transform: translateY(250px);
+}
+
+@media screen and (min-width: 1024px) {
+  #top-link-block.affix {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 50px;
+    display: block;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    z-index: 4;
+  }
+  #top-link-block.affix .fa-chevron-up {
+    margin-top: 16px;
+  }
+  #top-link-block.affix a {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: normal;
+    height: 60px;
+    width: 60px;
+    display: block;
+    color: #b29a5c;
+    background-color: #464646;
+  }
+}

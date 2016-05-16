@@ -1,0 +1,73 @@
+/* headings 
+=============*/
+$main-heading-colour: #ffffff;
+
+/* headings 
+=============*/
+$tint-colour: #b29a5c; /* gold */
+$blue-colour: #003471;
+
+/* links 
+=============*/
+$standard-links: #464646; /* grey on white */
+$standard-links-hover: #b69859; /* gold */
+$secondary-links: #fff; /* white on grey */
+$secondary-links-hover: #b69859; /* gold */
+$secondary-background-hover: #707070; /* light grey on dark */
+
+/* navigation 
+=============*/
+$initial-navigation-background: #464646; /* top strip navigation */
+$navigation-column-headings: #b0b0b0; /* very light grey */
+
+/* text 
+===========*/
+$body: #ffffff;
+$regular-text: #ffffff;
+$regular-inverse-text: #a2a2a2; /* light grey on white */
+$regular-inverse-light-text: #58595b;
+$regular-inverse-dark: #464646; /* dark grey on white */
+$section-dark: #363636; /* dark grey */
+$section-dark-text: #1a1a1a; /* very dark grey */
+
+/* pods 
+================== */
+$pods-background: #ffffff;
+$primary-pod-colour: #b69859; /* gold */
+$secondary-pod-colour: #7fa9b7; /* blue */
+$pricing-pod-text: #271f1f; /* grey */
+$solo-pod: #f7bc1d; /* yellow */
+$dual-pod: #f26522; /* orange */
+$team-pod: #92278f; /* purple */
+$unlimited-pod: #ec008c; /* pink */
+
+/* buttons 
+===========*/
+$button-text: #fff;
+$secondary-button-colour: #b99a5a; /* stronger gold */
+
+/* footer 
+===========*/
+$footer-background: #464646;
+$footer-text: #c1c1c1;
+$footer-headings: #7c7c7c;
+$footer-links-hover: #b69859;
+
+/* media queries
+==================*/
+
+$mobile: "(min-width: 320px)";
+$mobile-landscape: "(min-width: 480px)";
+$tablet-portrait: "(min-width: 768px)";
+
+/* tablet landscape is 1024 as well */
+
+$desktop: "(min-width: 1024px)";
+$widescreen: "(min-width: 1280px)";
+$large-widescreen: "(min-width: 1624px)";
+$qhd: "(min-width: 2560px)";
+
+$retina: "(-webkit-min-device-pixel-ratio: 2) and (min-resolution: 2dppx)";
+$non-retina: "-webkit-max-device-pixel-ratio: 1";
+
+

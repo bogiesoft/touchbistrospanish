@@ -1,0 +1,204 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+/* layout 
+=========== */
+@media screen and (min-width: 320px) {
+  header {
+    padding: 10px 0 20px;
+    text-align: center; } }
+@media screen and (min-width: 1024px) {
+  header {
+    text-align: left; } }
+
+.container {
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+  padding: 0 40px 0 40px; }
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: auto; } }
+@media screen and (min-width: 320px) {
+  .logo img {
+    width: 155px;
+    height: auto; } }
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: auto;
+    height: auto; } }
+
+.lang, .lang:hover {
+  padding: 5px 0 5px 30px;
+  background: transparent url("../images/earth-icon-lang.png") no-repeat left 50%;
+  margin-left: 25px; }
+
+.table {
+  display: table;
+  width: 100%; }
+
+.row {
+  display: table-row; }
+
+.cell {
+  display: table-cell;
+  /* General responsive helpers - override when necessary */ }
+  @media screen and (min-width: 320px) {
+    .cell {
+      display: block;
+      width: 100%; } }
+  @media screen and (min-width: 768px) {
+    .cell {
+      width: 50%;
+      display: table-cell; } }
+
+.stack-auto {
+  z-index: auto !important; }
+
+@media screen and (min-width: 1024px) {
+  .floating-menu {
+    padding-top: 115px; } }
+
+/* footer 
+=========== */
+footer {
+  background-color: #464646;
+  padding: 48px 0 48px 0;
+  margin-top: 200px;
+  color: #c1c1c1;
+  font-size: 14px;
+  position: relative;
+  clear: both;
+  z-index: 5; }
+  footer a, footer a:active, footer a:visited {
+    color: #c1c1c1; }
+  footer a:hover {
+    color: #b69859;
+    text-decoration: underline; }
+  footer .table {
+    position: relative; }
+  footer .footer-sections {
+    position: relative; }
+  footer .footer-section {
+    text-align: left;
+    vertical-align: top;
+    display: inline-block; }
+    footer .footer-section ul li {
+      padding-bottom: 15px; }
+    footer .footer-section .footer-headings {
+      color: #7c7c7c;
+      display: block;
+      font-size: 16px;
+      padding: 0 0 15px 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #7c7c7c; }
+    footer .footer-section .get-started a, footer .footer-section .get-started li {
+      font-weight: bold;
+      font-size: 15px; }
+    @media screen and (min-width: 320px) {
+      footer .footer-section {
+        padding: 0 15px 30px 0;
+        width: 100%; } }
+    @media screen and (min-width: 768px) {
+      footer .footer-section {
+        width: 45%;
+        padding-right: 20px; } }
+    @media screen and (min-width: 1280px) {
+      footer .footer-section {
+        width: 23%; } }
+  footer #notices {
+    border-top: 1px solid #7c7c7c;
+    padding-top: 8px;
+    margin-top: 20px; }
+    footer #notices .cell {
+      vertical-align: top;
+      padding: 20px 15px 20px 0; }
+      @media screen and (min-width: 320px) {
+        footer #notices .cell {
+          padding-right: 0;
+          display: block; }
+          footer #notices .cell img {
+            display: block; }
+          footer #notices .cell .company-logo {
+            margin-bottom: 15px; } }
+      @media screen and (min-width: 768px) {
+        footer #notices .cell {
+          width: 50%;
+          display: table-cell; }
+          footer #notices .cell img {
+            display: inline; }
+          footer #notices .cell .company-logo {
+            margin-bottom: 0;
+            margin-right: 25px; } }
+    @media screen and (min-width: 320px) {
+      footer #notices .cell-right {
+        text-align: left; }
+        footer #notices .cell-right a {
+          margin: 0 0 10px 0;
+          width: 100%;
+          display: block; } }
+    @media screen and (min-width: 768px) {
+      footer #notices .cell-right {
+        text-align: right; }
+        footer #notices .cell-right a {
+          margin-left: 15px;
+          width: auto;
+          display: inline; } }
+  footer .car {
+    position: absolute;
+    right: 0;
+    bottom: -48px; }
+    @media screen and (min-width: 320px) {
+      footer .car {
+        display: none; } }
+    @media screen and (min-width: 768px) {
+      footer .car {
+        display: block; } }
+
+@media screen and (min-width: 320px) {
+  #capture {
+    display: block; } }
+@media screen and (min-width: 1024px) {
+  #capture {
+    display: none; } }
+
+.page-template-setup-and-implementation footer {
+  margin-top: 0; }
+
+/*# sourceMappingURL=layout.css.map */

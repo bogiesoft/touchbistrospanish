@@ -1,0 +1,55 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+.basic-button,
+.basic-button:hover,
+.basic-button:active {
+  color: #ffffff;
+  padding: 10px 25px;
+  background-color: #b29a5c;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block; }
+
+@media screen and (min-width: 1024px) {
+  .basic-button:hover {
+    background-color: #ab9053; } }
+
+/*# sourceMappingURL=buttons.css.map */

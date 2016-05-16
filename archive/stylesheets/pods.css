@@ -1,0 +1,410 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+/* mixins 
+===========*/
+/* pods and callouts
+======================= */
+.pods, #videos .video-pods, .pricing-pods, .customer-pods {
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+@media screen and (min-width: 320px) {
+  .pods, #videos .video-pods, .pricing-pods, .customer-pods {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pods, #videos .video-pods, .pricing-pods, .customer-pods {
+    display: inline-block;
+    width: 47%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pods, #videos .video-pods, .pricing-pods, .customer-pods {
+    width: 346px;
+  }
+}
+
+#videos {
+  margin-top: 50px;
+}
+#videos .video-pods {
+  height: 1px;
+  min-height: 482px;
+  overflow: hidden;
+  background: transparent url("../images/play-button.png") no-repeat right 10px;
+}
+@media screen and (min-width: 320px) {
+  #videos .video-pods {
+    width: 242px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #videos .video-pods {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #videos .video-pods {
+    width: 295px;
+    margin: 0 15px 15px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #videos .video-pods {
+    margin: 0 15px 0 0;
+  }
+}
+#videos .video-pods .video-pod-content {
+  display: inline-block;
+}
+@media screen and (min-width: 320px) {
+  #videos .video-pods .video-pod-content {
+    width: 241px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #videos .video-pods .video-pod-content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #videos .video-pods .video-pod-content {
+    width: 295px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #videos .video-pods .video-pod-content img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #videos .video-pods .video-pod-content img {
+    width: auto;
+  }
+}
+#videos .video-pods p {
+  background-image: url("../images/videos-quote.png");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #464646;
+  text-align: left;
+  padding: 30px 0 0 15px;
+  position: absolute;
+  bottom: 0;
+  height: 97px;
+}
+@media screen and (min-width: 320px) {
+  #videos .video-pods p {
+    width: 227px;
+    background-position: 218px 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #videos .video-pods p {
+    width: 98%;
+    background-position: 97% 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #videos .video-pods p {
+    background-position: 271px 8px;
+    width: 280px;
+  }
+}
+#videos .video-pods p span {
+  display: block;
+}
+#videos .video-pods p .video-pod-category {
+  font-size: 12px;
+  font-weight: 400;
+}
+#videos .video-pods p .video-pod-company {
+  font-weight: 400;
+  font-size: 18px;
+  width: 80%;
+}
+#videos a {
+  display: block;
+  margin-top: 70px;
+  color: #b29a5c;
+}
+
+.video-pod-2 {
+  margin-right: 0;
+}
+
+.pricing-pods {
+  height: auto;
+  color: #271f1f;
+}
+.pricing-pods .pod-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 67px;
+}
+.pricing-pods .button {
+  border-radius: 3px;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 45px;
+}
+@media screen and (min-width: 1024px) {
+  .pricing-pods .button {
+    max-height: 2px;
+    overflow: hidden;
+    color: transparent;
+    /* Set our transitions up. */
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+  }
+}
+.pricing-pods .price {
+  margin-top: 44px;
+  margin: auto;
+}
+.pricing-pods .price-group {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.pricing-pods .currency-symbol, .pricing-pods .price, .pricing-pods .schedule, .pricing-pods .licence {
+  font-weight: bold;
+}
+.pricing-pods .currency-symbol {
+  font-size: 23px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+}
+.pricing-pods .price-value {
+  font-size: 62px;
+  line-height: 48px;
+  padding-left: 16px;
+  text-align: left;
+}
+.pricing-pods .currency {
+  font-size: 14px;
+  position: absolute;
+  right: 31px;
+}
+.pricing-pods .schedule {
+  bottom: 0;
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+}
+.pricing-pods .billing {
+  font-size: 12px;
+  padding: 15px 0;
+}
+.pricing-pods .licence {
+  padding: 15px 0;
+  border-top: 1px solid #271f1f;
+  border-bottom: 1px solid #271f1f;
+}
+.pricing-pods .pricing-ipads {
+  padding: 24px 0 54px 0;
+}
+.pricing-pods .content-heading {
+  padding-bottom: 24px;
+  font-family: "gothamhtf-book";
+}
+.pricing-pods .pod-about {
+  width: 225px;
+  margin: 0 auto 24px auto;
+}
+@media screen and (min-width: 1280px) {
+  .pricing-pods {
+    width: 283px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pricing-pods:hover .button {
+    color: #fff;
+    max-height: 200px;
+  }
+}
+.solo-pod {
+  margin-right: 15px;
+}
+.solo-pod .price-group {
+  width: 156px;
+}
+.solo-pod .pod-title {
+  color: #f7bc1d;
+}
+.solo-pod .button {
+  background-color: #f7bc1d;
+}
+
+.dual-pod {
+  margin-right: 15px;
+}
+.dual-pod .price-group {
+  width: 177px;
+}
+.dual-pod .pod-title {
+  color: #f26522;
+}
+.dual-pod .button {
+  background-color: #f26522;
+}
+
+.team-pod {
+  margin-right: 15px;
+}
+.team-pod .price-group {
+  width: 195px;
+}
+.team-pod .pod-title {
+  color: #92278f;
+}
+.team-pod .button {
+  background-color: #92278f;
+}
+
+.unlimited-pod .price-group {
+  width: 196px;
+}
+.unlimited-pod .pod-title {
+  color: #ec008c;
+}
+.unlimited-pod .button {
+  background-color: #ec008c;
+}
+
+.customer-pods {
+  text-align: left;
+  background-color: #fff;
+  color: #464646;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.customer-pods h6 {
+  color: #464646;
+  padding: 25px 0 25px 0;
+  font-family: "gothamhtf-book";
+  font-weight: 300;
+}
+.customer-pods .pod-about {
+  padding: 20px;
+  position: relative;
+  top: -2px;
+  border-left: 1px solid #bcbec0;
+  border-right: 1px solid #bcbec0;
+  border-bottom: 1px solid #bcbec0;
+  min-height: 128px;
+}
+.customer-pods .pod-quote {
+  font-size: 13px;
+  line-height: 22px;
+}
+.customer-pods .pod-category {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.customer-pods .pod-media {
+  position: absolute;
+  right: 17px;
+  top: 11px;
+}
+.customer-pods .pod-media img {
+  display: inline-block;
+}
+.customer-pods .pod-image {
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .customer-pods {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .customer-pods {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer-pods {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .customer-pods {
+    width: 382px;
+  }
+}
+
+/* this won't work in IE flavour */
+.customer-pods:nth-child(3n) {
+  margin-right: 0;
+}
+
+.more-pod {
+  display: inline-block;
+  padding: 14px 0 14px 0;
+  text-align: center;
+  border: 1px solid #bcbec0;
+  color: #58595b;
+  margin-top: 52px;
+  margin-bottom: 200px;
+}
+.more-pod .more-text {
+  padding-right: 25px;
+  background: transparent url("../images/arrow-down-pods.png") no-repeat right 50%;
+}
+@media screen and (min-width: 320px) {
+  .more-pod {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .more-pod {
+    width: 382px;
+  }
+}

@@ -1,0 +1,399 @@
+@import "vars";
+@import "mixins";
+@import "pods";
+@import "compass/css3";
+
+.home-hero-pods {
+	position: relative;
+}
+
+.home-hero-lead {
+	background: transparent url("../images/home-hero.jpg") no-repeat center top;
+	background-size: cover;
+
+	@media screen and #{$desktop} {
+		height: 958px;
+	}
+
+	.lead-title {
+
+		text-transform: none;
+		letter-spacing: 2px;
+
+		@media screen and #{$mobile} {
+			padding: 30px 0;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			display: block;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline-block;
+			padding-top: 60px;
+			line-height: 81px;
+		}
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	.splitter {
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$desktop} {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.full-service-hover, .quick-service-hover {
+
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$widescreen} {
+			top: 488px;
+			position: absolute;
+		}
+	}
+
+	.full-service-hover {
+		@media screen and #{$widescreen} {
+			left: -151px;
+		}
+	}
+
+	.quick-service-hover {
+		@media screen and #{$widescreen} {
+			right: -44px;
+		}
+	}
+
+	.down-arrow {
+
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline-block;
+			position: relative;
+			top: 102px;
+		}
+	}
+}
+
+.home-primary-pod, .home-secondary-pod {
+	@extend .pods;
+	@include background-opacity($pods-background, 0.85);
+	vertical-align: top;
+	padding: 35px 0 15px 0;
+
+	@media screen and #{$mobile} {
+		height: auto;
+		margin-bottom: 25px;
+	}
+
+	@media screen and #{$desktop} {
+		margin: 65px 0 0 0;
+		width: 346px;
+		height: 430px;
+	}
+
+	h4 {
+		font-size: 33px;
+		font-weight: 500;
+		font-style: normal;
+		text-transform: uppercase;
+
+		font-family: "Gotham SSm A", "Gotham SSm B";
+
+		@media screen and #{$mobile} {
+			padding-bottom: 10px;
+		}
+
+		@media screen and #{$desktop} {
+			padding: 0 0 20px 0;
+		}
+	}
+
+	p {
+		display: inline-block;
+		color: #707070;
+		font-weight: 700;
+		margin-bottom: 25px;
+		width: 80%;
+
+		span {
+			color: #555;
+			font-weight: 300;
+		}
+	}
+
+	.pod-button {
+		width: 150px;
+		font-family: "Gotham SSm A", "Gotham SSm B";
+		font-weight: 600;
+		display: block;
+		margin: auto;
+		padding: 15px 0;
+		border-radius: 4px;
+		color: $button-text;
+		font-size : 10px;
+		text-transform: uppercase;
+	}
+
+	.pod-button:hover{
+		@media screen and #{$desktop} {
+			background-color: #ab9053;
+		}
+	}
+
+	.single-image {
+
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$desktop} {
+			display: block;
+			left: 37px;
+			position: absolute;
+			top: 266px;
+		}
+	}
+
+	span {
+		display: block;
+	}
+}
+
+.home-primary-pod {
+
+	@media screen and #{$tablet-portrait} {
+		margin-right: 35px;
+	}
+
+	h4 {
+		color: $primary-pod-colour;
+	}
+
+	.pod-button {
+		background: $primary-pod-colour;
+	}
+}
+
+
+.home-secondary-pod {
+
+	h4 {
+		color: $secondary-pod-colour;
+	}
+
+	.pod-button {
+		background: $secondary-pod-colour;
+	}
+
+	.pod-button:hover {
+		background: #6a8d99;
+	}
+}
+
+.home-slides-section {
+
+	@media screen and #{$desktop} {
+		/* allows white strip to show */
+		.business-section-generic {
+			// z-index: -1;
+		}
+	}
+
+}
+
+.home-slide {
+
+	position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // z-index: -1;
+
+	h2 {
+		@media screen and #{$desktop} {
+			width: 676px;
+			display: inline-block;
+			padding-top: 100px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+
+.home-slides {
+
+	    min-height: 800px;
+
+}
+.home-slide {
+
+
+	div {
+
+		img {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 100%;
+	    height: auto;
+	    margin: auto;
+
+		}
+	}
+
+}
+
+.fs {
+
+
+
+	.home-slide {
+		    position: fixed;
+		    opacity: 0;
+		    z-index: 3;
+		    -webkit-transition: opacity .5s ease-out;
+		    transition: opacity .5s ease-out;
+
+	}
+
+	   	.active {
+				z-index:99;
+	   			.home-slide {
+	   				opacity: 1;
+					z-index: 999;
+	   			}
+
+
+
+		}
+
+
+}
+
+
+
+.home-slide-text {
+
+	text-align: left;
+
+	@media screen and #{$desktop} {
+		width: 652px;
+	}
+
+	.text-pod {
+
+		display: inline-block;
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			margin-top: 50px;
+		}
+
+		@media screen and #{$desktop} {
+			width: 452px;
+			margin: 73px 0 0 112px;
+		}
+
+		h3 {
+			margin-bottom: 30px;
+			text-transform: none;
+			font-size: 32px;
+		}
+
+		h3, p {
+			font-family: "Gotham SSm A", "Gotham SSm B";
+			color: $body;
+			@include text-shadow(rgba(0, 0, 0, 0.09) 0 2px 3px, rgba(0, 0, 0, 0.07) 0 0 25px);
+		}
+
+		p {
+			font-weight: 300;
+			line-height: 35px;
+			margin-bottom: 34px;
+			font-family: "gothamhtf-book";
+
+			@media screen and #{$desktop} {
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+.home-slide-one {
+/*	background: transparent url("../images/girl.jpg") no-repeat center top;
+*/	background-size: cover;
+
+}
+
+.home-slide-two {
+/*	background: transparent url("../images/woods.jpg") no-repeat center top;
+*/	background-size: cover;
+
+	.text-pod {
+		p {
+			width: 392px;
+		}
+	}
+}
+
+.home-slide-three {
+/*	background: transparent url("../images/home-slide-three.jpg") no-repeat center top;
+*/	background-size: cover;
+
+	.text-pod {
+		p {
+			width: 471px;
+		}
+	}
+
+}
+
+.home-we-love-customers {
+
+	h2 {
+		display: block;
+		color: $section-dark;
+	}
+
+	p {
+		display: inline-block;
+		color: $section-dark;
+		margin-top: 40px;
+	}
+
+	img {
+		@media screen and #{$mobile} {
+			width: 100%;
+		}
+
+		@media screen and #{$desktop} {
+			width: auto;
+		}
+	}
+}
+
+.home-restaurant-success {
+	@extend .home-we-love-customers;
+
+	p {
+		margin-bottom: 50px;
+	}
+}

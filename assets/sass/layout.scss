@@ -1,0 +1,245 @@
+@import "vars";
+
+/* layout 
+=========== */
+header {
+	
+	@media screen and #{$mobile} {
+		padding: 10px 0 20px;
+		text-align: center;
+	}
+
+	@media screen and #{$desktop} {
+		text-align: left;
+	}
+}
+
+.container {	
+	margin: 0 auto 0 auto;
+	max-width: 1200px;
+	padding: 0 40px 0 40px;
+}
+
+.logo {
+	
+	@media screen and #{$desktop} {
+		width: auto;
+	}
+
+	img {
+		@media screen and #{$mobile} {
+			width: 155px;
+			height: auto;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: auto;
+			height: auto;
+		}
+	}
+}
+
+.lang, .lang:hover {
+	padding: 5px 0 5px 30px;
+	background: transparent url("../images/earth-icon-lang.png") no-repeat left 50%;
+	margin-left: 25px;
+}
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+
+	/* General responsive helpers - override when necessary */
+
+	@media screen and #{$mobile} {
+		display: block;
+		width: 100%;
+	}
+
+	@media screen and #{$tablet-portrait} {
+		width: 50%;
+		display: table-cell;
+	}
+}
+
+.stack-auto {
+	z-index: auto !important;
+}
+
+.floating-menu {
+	@media screen and #{$desktop} {
+		padding-top: 115px;
+	}
+}
+
+/* footer 
+=========== */
+
+footer {
+	background-color: $footer-background;
+	padding: 48px 0 48px 0;
+	margin-top: 200px;
+	color: $footer-text;
+	font-size: 14px;
+	position: relative;
+	clear:both;
+	z-index: 5;
+
+	a, a:active, a:visited { color: $footer-text; }
+	a:hover { color: $footer-links-hover; text-decoration: underline; }
+
+	.table {
+		position: relative;
+	}
+
+	.footer-sections {
+		position: relative;
+	}
+
+	.footer-section {
+
+		text-align: left;
+		vertical-align: top;
+		display: inline-block;	
+
+		ul li {
+			padding-bottom: 15px;
+		}
+
+		.footer-headings {
+			color: $footer-headings;
+			display: block;
+			font-size: 16px;
+			padding: 0 0 15px 0;
+			margin-bottom: 15px;
+			border-bottom: 1px solid $footer-headings;
+		}
+
+		.get-started {
+			a, li {
+				font-weight: bold;
+				font-size: 15px;
+			}
+		}
+
+		@media screen and #{$mobile} {
+			padding: 0 15px 30px 0;
+			width: 100%;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: 45%;
+			padding-right: 20px;
+		}
+
+		@media screen and #{$widescreen} {
+			width: 23%;
+		}
+	}
+
+
+	#notices {
+		border-top: 1px solid $footer-headings;
+		padding-top:8px;
+		margin-top: 20px;
+
+		.cell {
+			vertical-align: top;
+			padding: 20px 15px 20px 0;
+
+			@media screen and #{$mobile} {
+
+				padding-right: 0;
+				display: block;
+
+				img {
+					display: block;
+				}
+
+				.company-logo {
+					margin-bottom: 15px;
+				}
+			}
+
+			@media screen and #{$tablet-portrait} {
+				width: 50%;
+				display: table-cell;
+
+				img {
+					display: inline;
+				}
+
+				.company-logo {
+					margin-bottom: 0;
+					margin-right: 25px;		
+				}
+			}
+
+			@media screen and #{$desktop} {
+				
+				
+			}
+		}
+
+		.cell-right {
+		
+			@media screen and #{$mobile} {
+				text-align: left;
+
+				a {
+					margin: 0 0 10px 0;
+					width: 100%;
+					display: block;
+				}
+			}
+
+			@media screen and #{$tablet-portrait} {
+				text-align: right;
+
+				a {
+					margin-left: 15px;
+					width: auto;
+					display: inline;
+				}
+			}
+		}
+	}
+
+	.car {
+		position: absolute;
+		right: 0;
+		bottom: -48px;
+
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			display: block;
+		}
+	}
+
+}
+
+#capture {
+	@media screen and #{$mobile} {
+		display: block;
+	}
+	@media screen and #{$desktop} {
+		display: none;
+	}
+}
+
+.page-template-setup-and-implementation {
+	footer {
+		margin-top: 0;
+	}
+}

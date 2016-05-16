@@ -1,0 +1,1858 @@
+@import "vars";
+@import "layout";
+@import "mixins";
+@import "buttons";
+@import "pods";
+@import "compass/css3";
+
+/* general POS solution template styles */
+
+.pos-solutions {
+
+	h3 {
+		padding-top: 40px;
+	}
+
+	.secondary-title {
+		margin-top: 25px;
+		padding-top: 0;
+	}
+
+	.lead-sub-hover-graphic {
+
+		@media screen and #{$mobile} {
+			display: block;
+			margin-top: 50px;
+			width: 100%;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: 50%;
+			display: inline-block;
+		}
+
+		@media screen and #{$desktop} {
+			margin-top: 80px;
+		}
+
+		@media screen and #{$widescreen} {
+			width: auto;
+		}
+	}
+
+	.secondary-sub-hover-graphic {
+
+		@media screen and #{$mobile} {
+		 	display: none
+		}
+
+	    @media screen and #{$desktop} {
+	    	display: block;
+		 	position: absolute;
+		    right: 168px;
+   			top: 397px;
+		}
+
+		@media screen and #{$widescreen} {
+			right: 215px;
+		}
+	}
+
+	.section-sub-hover-navigation {
+
+		background: none;
+		text-align: center;
+		position: relative;
+
+		a, a:active, a.active {
+			color: $body;
+		}
+
+		a.active {
+			border-color: $body;
+		}
+	}
+}
+
+/* actual sections within the template */
+
+.pos-foodtruck-lead {
+	background: transparent url("../images/pos-foodtruck.jpg") no-repeat center top;
+	background-size: cover;
+
+	@media screen and #{$widescreen} {
+		min-height: 1070px;
+	}
+}
+
+.pos-foodtruck-key-features {
+	background: transparent url("../images/pos-foodtruck-key-features.jpg") no-repeat center top;
+	background-size: cover;
+	text-align: right;
+	z-index: 2;
+
+	@media screen and #{$mobile} {
+	 	padding-bottom: 30px;
+	}
+
+	@media screen and #{$desktop} {
+	 	padding-bottom: 0;
+	}
+
+
+	h2 {
+		display: block;
+		text-align: center;
+	}
+
+	.right-text-pod {
+		text-align: left;
+
+		@media screen and #{$mobile} {
+	 		margin-top: 50px;
+		}
+
+		@media screen and #{$desktop} {
+	 		width: 488px;
+	 		display: inline-block;
+	 		margin-top: 150px;
+		}
+
+		h3 {
+			margin-bottom: 40px;
+		}
+
+		p {
+			margin-bottom: 30px;
+
+			@media screen and #{$desktop} {
+		 		width: 444px;
+			}
+		}
+	}
+}
+
+.pos-chains-lead {
+	background: transparent url("../images/pos-chain-lead-hero.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.pos-chains-key-features {
+
+	@media screen and #{$widescreen} {
+		text-align: left;
+	}
+
+	h2 {
+		display: block;
+		text-align: center;
+
+		@media screen and #{$mobile} {
+			padding-top: 0;
+		}
+
+		@media screen and #{$desktop} {
+			padding-top: 66px;
+		}
+	}
+
+	h2, h3, p {
+		color: $regular-inverse-dark;
+	}
+	
+	.left-inline-image {
+		
+		vertical-align: top;
+
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline-block;
+			margin-top: 38px;
+   			width: 36%;
+		}
+		
+		@media screen and #{$widescreen} {
+			margin-top: 0;
+			width: auto;
+			margin-top: 300px;
+		}
+	}
+
+	.right-text-pod {
+	
+		@media screen and #{$mobile} {
+	 		margin-top: 50px;
+	 		text-align: center;
+		}
+
+		@media screen and #{$desktop} {
+			text-align: left;
+			display: inline-block;
+			padding-left: 60px;
+			width: 449px;
+		}
+
+		@media screen and #{$widescreen} {
+	 		margin: 150px 0 90px 0;
+		}
+
+		h3 {
+			@media screen and #{$mobile} {
+				margin-bottom: 30px;
+			}
+
+			@media screen and #{$widescreen} {
+				margin-bottom: 90px;
+			}
+		}
+
+		p {
+			margin-bottom: 30px;
+
+			@media screen and #{$desktop} {
+		 		width: 445px;
+			}
+		}
+	}
+}
+
+.pos-chains-strip-background-lead {
+
+	.strip-background {
+		background-color: #80cfd3;
+
+		@media screen and #{$widescreen} {
+			height: 510px;
+			overflow: visible;
+		}
+
+		.main-pods {
+			@media screen and #{$widescreen} {
+				padding-top: 20px;
+			}
+		}
+
+		.centre-text-pod {
+
+			@media screen and #{$mobile} {
+				padding-top: 1px;
+			}
+			
+			@media screen and #{$desktop} {
+				display: inline-block;
+				width: 597px;
+				padding-top: 30px;
+			}
+		}
+
+		h3, p {
+			color: $body;
+		}
+
+		h3 {
+			margin-bottom: 40px;
+		}
+	}
+
+	.main-pods {
+
+		.left-pod, .right-pod {
+
+			vertical-align: top;
+			
+			@media screen and #{$widescreen} {
+				display: inline-block;
+				width: 515px;
+				height: auto;
+			}
+
+			img {
+				@media screen and #{$mobile} {
+					width: 40%;
+					margin-top: 30px;
+				}
+
+				@media screen and #{$desktop} {
+					width: auto;
+				}
+
+				@media screen and #{$widescreen} {
+					margin-top: 0;
+				}
+			}
+
+			h5 {
+				margin: 30px 0 40px 0;
+			}
+
+			h5, p {
+				color: $regular-inverse-dark;
+			}
+		}
+
+		.right-pod {
+			@media screen and #{$mobile} {
+				padding-bottom: 50px;
+			}
+
+			@media screen and #{$widescreen} {
+				padding-bottom: 0;
+			}
+		}
+
+		.centre-pod {
+
+			@media screen and #{$mobile} {
+				display: none;
+			}
+
+			@media screen and #{$widescreen} {
+				display: inline-block;
+				position: relative;
+				width: 50px;
+				height: 415px;
+			}
+
+			h5 {
+				font-size: 30px;
+			}
+
+			.and, .or {
+
+				@media screen and #{$desktop} {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.and {
+				color: $body;
+				
+				@media screen and #{$desktop} {
+					top: 168px;
+				}
+			}
+
+			.or {
+				color: $regular-inverse-dark;
+				
+				@media screen and #{$desktop} {
+					top: 270px;
+				}
+			}
+		}
+	}
+}
+
+.pos-chains-strip-background-secondary {
+
+	@media screen and #{$widescreen} {
+		margin-top: 490px;
+	}
+
+	.strip-background {
+		background-color: #f0b12a;
+		padding: 50px 0;
+
+		@media screen and #{$widescreen} {
+			height: 285px;
+			overflow: visible;
+		}
+	}
+
+	h3, p {
+		color: $body;
+	}
+
+	h3 {
+		margin-bottom: 30px;
+
+		@media screen and #{$widescreen} {
+			margin-top: 0;
+		}
+	}
+
+	.main-pods {
+
+		@media screen and #{$widescreen} {
+			text-align: left;
+		}
+
+		.left-pod {
+			@media screen and #{$widescreen} {
+				width: 606px;
+				margin-right: 60px;
+			}
+		}
+
+		.left-pod, .right-pod {
+
+			vertical-align: top;
+
+			@media screen and #{$tablet-portrait} {
+				text-align: center;
+			}
+			
+			@media screen and #{$widescreen} {
+				text-align: left;
+				display: inline-block;
+			}
+
+			h5 {
+				margin: 30px 0 40px 0;
+			}
+		}
+
+		/*.right-pod {
+			@media screen and #{$mobile} {
+				padding-bottom: 50px;
+			}
+
+			@media screen and #{$desktop} {
+				padding-bottom: 0;
+			}
+		}*/
+	}
+
+	.left-pod {
+		img {
+			@media screen and #{$mobile} {
+			 	width: 40%
+			}
+
+			@media screen and #{$desktop} {
+			 	width: 44%
+			}
+
+			@media screen and #{$widescreen} {
+				width: auto;
+			}
+		}
+	}
+
+	.left-aligned-pod,  .centred-pod {
+		@media screen and #{$desktop} {
+			display: block;
+  		  	width: 476px;
+  		  	margin-left: auto;
+  		  	margin-right: auto;
+		}
+
+		@media screen and #{$widescreen} {
+			margin-left: 0;
+  		  	margin-right: 0;
+		}
+	}
+
+	.left-aligned-pod {
+		p {
+			color: $body;
+
+			@media screen and #{$widescreen} {
+				line-height: 32px;
+			}
+		}
+
+		h3 {
+			color: $body;
+			text-align: center;
+
+			@media screen and #{$widescreen} {
+				line-height: 37px;
+			}
+		}
+
+		@media screen and #{$mobile} {
+			margin-bottom: 30px;
+		}
+
+		@media screen and #{$desktop} {
+			margin-bottom: 0;
+		}
+	}
+
+	.centred-pod {
+		text-align: center;
+
+		@media screen and #{$desktop} {
+			margin-top: 40px;
+		}
+
+		@media screen and #{$widescreen} {
+			margin-top: 12px;
+		}
+
+		p, span {
+			color: $regular-inverse-dark;
+		}
+
+		p {
+			@media screen and #{$mobile} {
+				margin: 40px 0 0 0;
+			}
+
+			@media screen and #{$desktop} {
+				margin: 45px 0 5px 0;
+			}
+		}
+
+		span {
+			font-size: 14px;
+			display: block;
+		}
+	}
+}
+
+.pos-chains-text-image-pods {
+
+	@media screen and #{$widescreen} {
+		margin-top: 340px;
+	}
+
+	h3, p {
+		color: $regular-inverse-dark;
+	}
+
+	.aligned-pods {
+
+		@media screen and #{$mobile} {
+			padding-top: 30px;
+		}
+
+		@media screen and #{$desktop} {
+			padding-top: 70px;
+		}
+
+		.left-pod {
+
+			@media screen and #{$mobile} {
+				margin-bottom: 30px;
+			}
+
+			@media screen and #{$desktop} {
+				margin-bottom: 0;
+				margin-right: 120px;
+			}
+		}
+
+		.left-pod, .right-pod {
+
+			vertical-align: top;
+
+			h3 {
+				margin-bottom: 90px;
+			}
+
+			img {
+				margin-bottom: 30px;
+			}
+			
+			@media screen and #{$desktop} {
+				display: inline-block;
+				width: 357px;
+			}
+		}
+	}
+
+	.full-image-pod {
+
+		@media screen and #{$desktop} {
+			padding-bottom: 30px;
+		}
+
+		@media screen and #{$widescreen} {
+			margin-top: 100px;
+		}
+
+		h3, p {
+			@media screen and #{$desktop} {
+				display: inline-block;
+				width: 775px;
+			}
+		}
+
+		p {
+			@media screen and #{$mobile} {
+				margin: 40px 0;
+			}
+
+			@media screen and #{$widescreen} {
+				margin: 40px 0 75px 0;
+			}
+		}
+
+		img {
+			@media screen and #{$mobile} {
+			 	width: 100%;
+			}
+
+			@media screen and #{$tablet-portrait} {
+			 	width: 70%;
+			}
+
+			@media screen and #{$widescreen} {
+				width: auto;
+			}
+		}
+	}
+}
+
+.pos-chains-slide-hover {
+	h3 {
+		@media screen and #{$mobile} {
+			margin-top: 0;
+		}
+
+		@media screen and #{$desktop} {
+			padding-top: 40px;
+		}
+	}
+}
+
+.pos-foodtruck-learn-it {
+	background: transparent url("../images/pos-footruck-learnit.jpg") no-repeat center top;
+	background-size: cover;
+
+	@media screen and #{$mobile} {
+		padding: 50px 0;
+	}
+
+	.text-pod {
+
+		h3 {
+			margin: 15px 0 30px 0;
+		}
+
+		@media screen and #{$desktop} {
+		 	margin-top: 125px;
+		 	display: inline-block;
+		 	width: 600px;
+		}
+
+		@media screen and #{$widescreen} {
+		 	margin-top: 185px;
+		}
+	}	
+}
+
+.pos-complete-customization {
+	h3 {
+		padding-top: 50px;
+	}
+}
+
+.pos-foodtruck-stacked-slides {
+
+	@media screen and #{$desktop} {
+		padding-bottom: 30px;
+	}
+
+	@media screen and #{$widescreen} {
+		padding-bottom: 0;
+	}
+
+	.piggy-bank {
+		margin-bottom: 25px;
+	}
+
+	.centre-text-pod {
+		text-align: center;
+
+		@media screen and #{$desktop} {
+		 	width: 580px;
+		 	display: inline-block;
+		}
+
+		h3, p {
+			color: $regular-inverse-dark;
+		}
+
+		h3 {
+			margin: 10px 0 40px 0;
+		}
+
+		p {
+			margin-bottom: 50px;
+		}
+	}
+
+	.lead-graphic {
+		@media screen and #{$mobile} {
+			width: 100%;
+		}
+
+		@media screen and #{$mobile-landscape} {
+			width: 40%;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: 60%;
+		}
+
+		@media screen and #{$desktop} {
+			width: 80%;
+		}
+
+		@media screen and #{$widescreen} {
+			width: auto;
+		}
+	}
+}
+
+.pos-brewery-account-management {
+	background: transparent url("../images/pos-account-management.jpg") no-repeat center top;
+	background-size: cover;
+	text-align: left;
+
+	@media screen and #{$mobile} {
+		height: 478px;
+	}
+
+	.top-left-text-pod {
+
+		display: inline-block;
+
+		@media screen and #{$desktop} {
+	 		width: 442px;
+	 		margin-left: 140px;
+		}
+
+		h3 {
+			@media screen and #{$mobile} {
+				margin-bottom: 30px;
+			}
+
+			@media screen and #{$desktop} {
+				margin: 80px 0 30px 0;
+			}
+		}
+
+		p, h3 {
+
+			text-align: left;
+		}
+	}
+}
+
+.pos-brewery-lead {
+	background: transparent url("../images/brewery-lead-hero.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.pos-brewery-key-features {
+	background: transparent url("../images/brewery-key-features-bens.jpg") no-repeat center top;
+	background-size: cover;
+	text-align: right;
+	z-index: 2;
+
+	h2 {
+		text-align: center;
+	}
+
+	@media screen and #{$mobile} {
+	 	padding-bottom: 30px;
+	}
+
+	@media screen and #{$desktop} {
+	 	padding-bottom: 0;
+	}
+
+	.right-text-pod {
+		p, h3 {
+			color: $body;
+			display: inline-block;
+			text-align: left;
+		}
+
+		p {
+			margin-bottom: 25px;
+		}
+
+		h3 {
+			text-align: left;
+			padding: 0;
+			margin: 0 0 45px 0;
+
+			@media screen and #{$mobile} {
+				line-height: 28px;
+			}
+
+			@media screen and #{$desktop} {
+				line-height: 44px;
+			}
+		}
+
+		@media screen and #{$mobile} {
+			text-align: left;
+			margin: 30px 0 0;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			margin: 50px 0;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline-block;
+			width: 581px;
+			margin: 135px 0 170px 0;
+		}
+	}
+}
+
+.pos-quick-service-lead {
+
+	background: transparent url("../images/pos-quick-serv-hero.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.pos-restaurants-lead {
+	background: transparent url("../images/pos-restaurant-hero.jpg") no-repeat center top;
+	background-size: cover;
+
+	.video-cta {
+
+		h3 {
+			
+			background: transparent url("../images/pos-play-button.png") no-repeat top center;
+
+			@media screen and #{$tablet-portrait} {
+				background-size: 72px 72px;
+				padding-top: 82px;
+			}
+
+			@media screen and #{$widescreen} {
+				background-size: auto;
+				padding-top: 112px;
+			}
+		}
+	
+		.video-content {
+			display: inline-block;
+			text-align: center;
+		   
+		    @media screen and #{$tablet-portrait} {
+		    	margin-top: 50px;
+		    	width: 176px;
+		    }
+
+		    @media screen and #{$desktop} {
+		    	margin: 140px 0 0 0;
+		    	width: 215px;
+		    }
+		    
+		    @media screen and #{$widescreen} {
+		    	width: 267px;
+		    }
+		}
+	}
+}
+
+.pos-smart-solid-section-colour {
+	background: #67b2e9;
+
+	h3 {
+		padding-top: 50px;
+	}
+
+	.supplementary-pods {
+
+		@media screen and #{$desktop} {
+			margin-right: 36px;
+		    width: 242px;
+		}
+
+		@media screen and #{$widescreen} {
+			margin-right: 66px;
+   			width: 285px;
+		}
+	}
+}
+
+.pos-quick-service-hero {
+
+	background: transparent url("../images/quick-serve-hero.jpg") no-repeat center top;
+	background-size: cover;
+	z-index: 2;
+
+	@media screen and #{$widescreen} {
+		min-height: 1280px;	
+	}
+
+	h2 {
+		font-weight: 400;
+		
+		@media screen and #{$desktop} {
+			margin-top: 60px;
+			color: $section-dark;
+		}
+	}
+
+	h3 {
+		color: $body;
+	}
+
+	p {
+		@media screen and #{$desktop} {
+			@include text-shadow(rgba(0, 0, 0, 0.09) 1.8px 0.9px 3px, rgba(0, 0, 0, 0.09) 0 0 25px);
+			font-size: 18px;
+		}
+
+		color: white;
+		font-weight: 400;
+		margin-top: 30px;
+	}
+
+	img {
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline;
+		}
+	}
+
+	.left-text-pod {
+		
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			padding-bottom: 30px;
+		}
+
+		@media screen and #{$desktop} {
+			width: 440px;
+		}
+		
+		@media screen and #{$widescreen} {
+			padding: 120px 0 280px 0;
+		}
+	}
+}
+
+.pos-restaurant-key-features {
+
+	text-align: right;
+
+	h2 {
+		text-align: center;
+		color: $section-dark;
+
+		@media screen and #{$desktop} {
+			margin-bottom: 30px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 28px;
+		
+		@media screen and #{$mobile} {
+			margin-top: 30px;
+		}
+
+		@media screen and #{$desktop} {
+			margin-top: 50px;
+		}
+	}
+
+	.right-text-pod {
+		p, h3 {
+			color: $section-dark;
+		}
+
+		h3 {
+			text-align: left;
+			padding: 0;
+			margin: 0;
+		}
+
+		@media screen and #{$mobile} {
+			text-align: left;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			margin: 50px 0 0;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline-block;
+			width: 333px;
+			margin: 250px 80px 147px;
+		}
+	}
+}
+
+.pos-tableside-ordering {
+
+	background: transparent url("../images/pos-solutions-hero-server-1.jpg") no-repeat center top;
+	background-size: cover;
+	text-align: right;
+	z-index: 2;
+
+	.right-text-pod {
+
+		display: inline-block;
+		text-align: left;
+		
+		@media screen and #{$mobile} {
+			padding-bottom: 30px;
+		}
+
+		@media screen and #{$desktop} {
+			padding-bottom: 0;
+			margin-top: 170px;
+			width: 624px;
+		}
+
+		h5 {
+			@media screen and #{$mobile} {
+				margin-top: 30px;
+				line-height: 24px;
+			}
+
+			@media screen and #{$widescreen} {
+				margin-top: 0
+			}
+		}
+
+		h5, p {
+			font-family: "Gotham SSm A", "Gotham SSm B";
+			
+			@media screen and #{$mobile} {
+				font-size: 16px;
+			}
+
+			@media screen and #{$widescreen} {
+				font-size: 24px;
+				line-height: 41px;
+			}
+		}
+
+		p {
+
+			font-weight: 300;
+
+			@media screen and #{$mobile} {
+				margin-top: 28px;
+			}
+
+			@media screen and #{$widescreen} {
+				margin-top: 68px;
+			}
+		}
+	}
+
+	h3 {
+		text-align: center;
+	}
+}
+
+#bubble-background {
+	
+	@media screen and #{$tablet-portrait} {
+		background: transparent url("../images/bubble-background.png") no-repeat scroll center 0;
+
+		padding-bottom: 50px;
+	}
+
+	@media screen and #{$widescreen} {
+		padding-bottom: 0;
+	}
+}
+
+.pos-text-blocks {
+	h3, h6, p {
+		color: $section-dark-text;
+	}
+
+	h3 {
+		@media screen and #{$desktop} {
+			margin-bottom: 45px;
+		}
+
+		@media screen and #{$widescreen} {
+			margin-top: 75px;
+		}
+	}
+}
+
+.pos-solid-with-slides {
+	background: #01bab8;
+
+	@media screen and #{$mobile} {
+		padding-bottom: 40px;
+		margin-top: 40px;
+	}
+
+	h3 {
+		@media screen and #{$desktop} {
+			margin-top: 100px;
+		}
+	}
+
+	p.intro-text {
+		display: inline-block;
+		
+		@media screen and #{$mobile} {
+			margin-top: 20px;
+		}
+	
+		@media screen and #{$desktop} {
+			margin-top: 50px;
+			width: 760px;
+		}
+	}
+}
+
+.pos-bars-clubs-lead {
+	background: transparent url("../images/pos-bar-club-hero.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.pos-bars-clubs-key-features {
+
+	background: transparent url("../images/pos-bar-club-key-features-hero.jpg") no-repeat center top;
+	background-size: cover;
+	z-index: 2;
+	
+	.text-pod {
+
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			padding: 30px 0 60px 0;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: 725px;
+			padding: 300px 0 0 0;
+		}
+
+		@media screen and #{$widescreen} {
+			padding-bottom: 80px;
+		}
+		
+		h3 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin-bottom: 35px;
+			font-weight: 300;
+			font-family: "Gotham SSm A", "Gotham SSm B";
+
+			@media screen and #{$widescreen} {
+				font-size: 23px;
+				line-height: 36px;
+			}
+		}
+	}
+}
+
+.black-opacity {
+	.black-opacity-cover {
+		@media screen and #{$mobile} {
+			@include background-opacity(black, 0.37);
+			position: absolute;
+			left: 0;
+			top:0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+		}
+
+		@media screen and #{$desktop} {
+			display: none;
+		}
+	}
+}
+
+/* some required opacity all the time */
+
+.pos-bars-clubs-key-features {
+	.black-opacity-cover {
+		@media screen and #{$widescreen} {
+			display: block;
+		}
+	}
+}
+
+.pos-fast-bar-mode {
+
+	background: transparent url("../images/pos-fast-bar-mode.jpg") no-repeat center top;
+	background-size: cover;
+
+	@media screen and #{$mobile} {
+		height: 400px;
+	}
+
+	.text-pod {
+
+		display: inline-block;
+
+		@media screen and #{$desktop} {
+			width: 597px;
+		}	
+
+		h3 {
+			margin-top: 50px;
+		}
+
+		p {	
+			font-weight: 300;
+			margin-top: 20px;
+
+			@media screen and #{$widescreen} {
+				line-height: 36px;
+				margin-top: 40px;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+.pos-print-chits {
+
+	padding-top: 10px;
+
+	.text-pod {
+		p, h3 {
+			color: $regular-inverse-dark;
+		}
+
+		h3 {
+			margin-top: 30px;
+		}
+
+		p {
+			@media screen and #{$mobile} {
+				margin: 30px 0 0;
+			}	
+
+			@media screen and #{$desktop} {
+				width: 664px;
+				display: inline-block;
+			}	
+
+			@media screen and #{$widescreen} {
+				margin: 50px 0 90px 0;
+				font-size: 18px;
+				line-height: 30px;
+			}	
+		}
+	}
+
+	.pos-print-chit-lead-graphic {
+		@media screen and #{$mobile} {
+			margin-top: 30px;
+			width: 100%;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			margin-top: 30px;
+			width: 70%;
+		}
+
+		@media screen and #{$widescreen} {
+			margin-top: 0;
+			width: auto;
+			display: inline-block;
+		}
+	}
+}
+
+.pos-stacked-slides {
+
+	.pos-stacked-slide {
+	
+		position: relative;
+
+		@media screen and #{$mobile} {
+			margin-top: 50px;
+		}
+
+		@media screen and #{$widescreen} {
+			margin: 200px 0;
+		}
+	}
+
+	.text-pod {
+	
+		vertical-align: top;
+		
+		@media screen and #{$mobile} {
+			width: 100%;
+			margin: 30px 0;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			padding-bottom: 30px;
+		}
+
+		@media screen and #{$widescreen} {
+			padding-bottom: 0;
+			display: inline-block;
+			width: 630px;
+			text-align: left;
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+
+		p, h3 {
+			color: $regular-inverse-dark;
+		
+			@media screen and #{$widescreen} {
+				text-align: left;
+			}
+		}
+
+		p {
+
+			@media screen and #{$mobile} {
+				margin: 30px 0 0;
+			}
+
+			@media screen and #{$desktop} {
+				width: 563px;
+				display: inline-block;
+			}
+
+			@media screen and #{$widescreen} {
+				
+				margin: 30px 0 50px 0;
+			}
+		}
+
+		.extra-image {
+			@media screen and #{$mobile} {
+				margin: 30px 0 0;
+			}
+
+			@media screen and #{$tablet-portrait} {
+				margin: 30px auto 0 auto;
+			}
+
+			@media screen and #{$widescreen} {
+				margin: 0;
+			}
+		}
+
+		.extra-image,
+		.overlapping-image {
+			@media screen and #{$mobile} {
+				width: 100%;
+			}
+
+			@media screen and #{$tablet-portrait} {
+				width: 45%;
+				display: block;
+			}
+
+			@media screen and #{$widescreen} {
+				width: auto;
+			}
+		}
+
+		.overlapping-image {
+			@media screen and #{$mobile} {
+				margin: 30px 0 50px 0;
+			}
+
+			@media screen and #{$tablet-portrait} {
+				margin: 30px auto 30px auto;
+			}
+
+			@media screen and #{$widescreen} {
+				left: -168px;
+			    position: relative;
+			    top: 35px;
+			}
+		}
+
+	}
+
+	.pos-stacked-lead-graphic {
+		
+		vertical-align: bottom;
+		
+		@media screen and #{$mobile} {
+			width: 100%;
+		}
+
+		@media screen and #{$mobile-landscape} {
+			width: 50%;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: 33%;
+			margin: auto;
+			display: block;
+		}
+
+		@media screen and #{$widescreen} {
+			display: inline-block;
+			margin-right: 20px;
+			width: auto;
+		}
+	}
+
+	.circle-image {
+		margin-bottom: 50px;
+	}
+
+	.profile-faces {
+		
+		@media screen and #{$mobile} {
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		@media screen and #{$widescreen} {
+			text-align: left;
+			margin: 0;
+		}
+
+		.faces {
+
+			@media screen and #{$mobile} {
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+
+			@media screen and #{$tablet-portrait} {
+				margin: 0 12px 0 0;
+			}
+		}
+	}
+
+	.overlap-text {
+
+		p {
+			@media screen and #{$widescreen} {
+				width: 400px;
+			}
+		}
+		
+		@media screen and #{$mobile} {
+			display: block;
+		}
+
+		@media screen and #{$widescreen} {
+			position: absolute;
+			top: 53px;
+			right: 108px;
+			width: 400px;
+		}	
+	}
+
+}
+
+.pos-slide-hover {
+
+	@media screen and #{$desktop} {
+		padding-bottom: 50px;
+	}	
+
+	@media screen and #{$widescreen} {
+		padding-bottom: 0;
+	}	
+
+	/* hides the tall graphic desktop and above */
+	
+	.section-sub-hover-navigation {
+		@media screen and #{$widescreen} {
+			height: 890px;
+		}
+	}
+		
+	h3 {
+		color: $section-dark-text;
+	}
+
+	p {
+		display: inline-block;
+		color: $regular-inverse-dark;
+		font-weight: 300;
+		margin-top: 25px;
+	}
+
+	p.intro-text {
+		@media screen and #{$desktop} {
+			width: 784px;
+		}
+	}
+
+	.pos-on-demand-reports  {
+		
+		@media screen and #{$mobile} {
+			display: block;
+			margin-top: 50px;
+			width: 100%;
+		}
+
+		@media screen and #{$desktop} {
+			display: inline-block;
+			margin-top: 120px;
+			width: auto;
+		}
+	}
+
+	.right-text-pod {
+		
+		vertical-align: top;
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			margin-top: 50px;
+			display: block;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			display: inline-block;
+			width: 270px;
+			margin: 150px 0 0 35px;
+		}
+
+		@media screen and #{$widescreen} {
+			width: 313px;
+			margin: 400px 0 0 35px;
+		}
+
+		h6 {
+			color: $regular-inverse-dark;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
+	.section-sub-hover-navigation {
+		text-align: center;
+
+		ul li {
+
+			@media screen and #{$mobile} {
+
+				a, a:active {
+					color: $regular-inverse-dark;
+				}
+
+				a:hover, .active {
+					color: $regular-inverse-dark;
+					border-bottom: 3px solid $regular-inverse-dark;
+				}
+			}
+
+			@media screen and #{$tablet-portrait} {
+
+				a, a:active {
+					color: $regular-inverse-dark;
+				}
+
+				a:hover, .active {
+					color: $tint-colour;
+					border-bottom: 3px solid $tint-colour;
+				}
+			}
+		}
+	}
+}
+
+.pos-chains-on-demand-insights {
+	background: transparent url("../images/skyline.jpg") no-repeat center top;
+	background-size: cover;
+
+	/* align this one left because image is big */
+
+	.section-sub-hover-navigation {
+		text-align: left;
+	}
+
+	.lead-sub-hover-graphic {
+		@media screen and #{$desktop} {
+			width: 65%;
+		}
+	}
+
+	.secondary-sub-hover-graphic {
+		@media screen and #{$desktop} {
+			right: 115px;
+		}
+
+		@media screen and #{$widescreen} {
+			right: 215px;
+		}
+	}
+
+	.right-text-pod {
+	
+		vertical-align: top;
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			margin-top: 50px;
+			display: block;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			margin: 105px 0 0 35px;
+			display: inline-block;
+			width: 285px;
+		}
+
+		@media screen and #{$widescreen} {
+			width: 313px;
+		}
+
+		h6 {
+			color: $body;
+			font-family: "Gotham SSm A", "Gotham SSm B";
+		}
+
+		p { 
+			@media screen and #{$mobile} {
+				margin: 25px 0;
+			}
+
+			@media screen and #{$desktop} {
+				margin: 25px 0 0;
+			}
+		}
+	}
+
+	h3 {
+		@media screen and #{$mobile} {
+			padding-top: 40px;
+		}
+	}
+}
+
+.pos-food-truck-on-demand-insights {
+	background: transparent url("../images/skyline.jpg") no-repeat center top;
+	background-size: cover;
+
+	/* align this one left because image is big */
+
+	.section-sub-hover-navigation {
+		text-align: left;
+	}
+
+	.lead-sub-hover-graphic {
+		@media screen and #{$desktop} {
+			width: 65%;
+		}
+	}
+
+	.secondary-sub-hover-graphic {
+		@media screen and #{$desktop} {
+			right: 100px;
+		}
+
+		@media screen and #{$desktop} {
+			right: 215px;
+		}
+	}
+
+	p, h3 {
+		color: $body;
+		display: inline-block;
+	}
+
+	p {
+		font-weight: 300;
+		
+		@media screen and #{$mobile} {
+			margin: 30px 0;
+		}
+
+		@media screen and #{$desktop} {
+			margin: 30px 0 0;
+		}
+	}
+
+	p.intro-text {
+		@media screen and #{$desktop} {
+			width: 784px;
+		}
+	}
+
+	.right-text-pod {
+	
+		vertical-align: top;
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			margin-top: 30px;
+			display: block;
+		}
+
+		@media screen and #{$desktop} {
+			margin: 105px 0 0 35px;
+			display: inline-block;
+			width: 280px;
+		}
+
+		@media screen and #{$widescreen} {
+			width: 313px;
+		}
+
+		h6 {
+			color: $body;
+			font-family: "Gotham SSm A", "Gotham SSm B";
+		}
+	}
+
+}
+
+.pos-slide-hover-hero {
+
+	background: transparent url("../images/home-pic-insights.jpg") no-repeat center top;
+	background-size: cover;
+
+	@media screen and #{$mobile} {
+		padding-bottom: 20px;
+	}
+
+	@media screen and #{$desktop} {
+		padding-bottom: 0;
+	}
+
+	p, h3 {
+		color: $body;
+		display: inline-block;
+	}
+
+	p {
+		font-weight: 300;
+		
+		@media screen and #{$mobile} {
+			margin: 30px 0 0;
+		}
+	}
+
+	p.intro-text {
+		@media screen and #{$desktop} {
+			width: 784px;
+		}
+	}
+
+	.right-text-pod {
+	
+		vertical-align: top;
+		text-align: left;
+
+		@media screen and #{$mobile} {
+			margin-top: 50px;
+			display: block;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			margin: 105px 0 0 35px;
+			display: inline-block;
+			width: 270px;
+		}
+
+		@media screen and #{$desktop} {
+			margin: 105px 0 0 35px;
+			width: 313px;
+		}
+
+		h6 {
+			color: $body;
+			font-family: "Gotham SSm A", "Gotham SSm B";
+		}
+	}
+}
+
+.pos-on-demand-reports {
+	@extend .pos-slide-hover-hero;
+
+	background: transparent url("../images/anytime-anywhere-beach.png") no-repeat center top;
+	background-size: cover;
+}
+
+#on-demand-reports {
+	background: transparent url("../images/skyline.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.video-cta {
+	position: relative;
+	text-align: right;
+	
+	h3 {
+		color: $body;
+		font-weight: 700;
+		line-height: 35px;
+		margin-top: 20px;
+		text-transform: none;
+
+		@media screen and #{$desktop} {
+			font-size: 38px;
+		}
+	}
+
+	@media screen and #{$mobile} {
+		display: none;
+	}
+
+	@media screen and #{$tablet-portrait} {
+		display: block;
+	}
+}
+
+.video-cta-centred {
+
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+
+	@media screen and #{$mobile} {
+		display: none;
+	}
+
+	@media screen and #{$tablet-portrait} {
+		display: block;
+	}
+
+	@media screen and #{$desktop} {
+		position: relative;
+		left: 200px;
+	}
+
+	a, a:hover, a:active {
+		color: $body;
+	}
+
+	h3 {
+		background: transparent url("../images/pos-play-button.png") no-repeat left center;
+
+		@media screen and #{$tablet-portrait} {
+			background-size: 72px 72px;
+			padding: 50px 0 50px 90px;
+		}
+
+		@media screen and #{$widescreen} {
+			background-size: auto;
+			padding: 50px 0 50px 110px;
+		}
+
+		margin-top: 0;
+	}
+
+	.video-content {
+		display: inline-block;
+		text-align: left;
+
+		@media screen and #{$desktop} {
+			width: 519px;
+		}
+	}
+}

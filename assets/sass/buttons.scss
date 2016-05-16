@@ -1,0 +1,19 @@
+@import "vars";
+
+.basic-button,
+.basic-button:hover,
+.basic-button:active {
+	color: $body;
+	padding: 10px 25px;
+	background-color: $tint-colour;
+	border-radius: 3px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+}
+
+.basic-button:hover {
+	@media screen and #{$desktop} {
+		background-color: #ab9053;
+	}
+}

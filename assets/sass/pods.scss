@@ -1,0 +1,417 @@
+@import "vars";
+@import "mixins";
+
+/* pods and callouts
+======================= */
+
+.pods {
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+
+	@media screen and #{$mobile} {
+		width: 100%;
+	}
+
+	@media screen and #{$tablet-portrait} {
+		display: inline-block;
+		width: 47%;
+	}
+
+	@media screen and #{$desktop} {
+		width: 346px;
+	}
+}
+
+#videos {
+
+	margin-top: 50px;
+
+	.video-pods {
+
+		@extend .pods;
+		height: 1px;
+		min-height: 482px;
+		overflow: hidden;
+		background: transparent url("../images/play-button.png") no-repeat right 10px;
+
+		@media screen and #{$mobile} {
+			width: 242px;
+			margin-bottom: 30px;
+		}
+
+		@media screen and #{$mobile-landscape} {
+			width: 100%;
+		}
+
+		@media screen and #{$tablet-portrait} {
+			width: 295px;
+			margin: 0 15px 15px 0;
+		}
+
+		@media screen and #{$desktop} {
+			margin: 0 15px 0 0;
+		}
+
+		.video-pod-content {
+
+			display: inline-block;
+
+			@media screen and #{$mobile} {
+				width: 241px;
+			}
+
+			@media screen and #{$mobile-landscape} {
+				width: 100%;
+			}
+
+			@media screen and #{$tablet-portrait} {
+				width: 295px;
+			}
+
+			img {
+				@media screen and #{$mobile-landscape} {
+					width: 100%;
+				}
+
+				@media screen and #{$tablet-portrait} {
+					width: auto;
+				}
+			}
+		}
+
+		p {
+			background-image: url("../images/videos-quote.png");
+			background-repeat: no-repeat;
+			@include background-opacity($pods-background, 0.85);
+			color: $regular-inverse-dark;
+			text-align: left;
+			padding: 30px 0 0 15px;
+			position: absolute;
+			bottom: 0;
+			height: 97px;
+
+			@media screen and #{$mobile} {
+				width: 227px;
+				background-position: 218px 8px;
+			}
+
+			@media screen and #{$mobile-landscape} {
+				width: 98%;
+				background-position: 97% 8px;
+			}
+
+			@media screen and #{$tablet-portrait} {
+				background-position: 271px 8px;
+				width: 280px;
+			}
+
+			span {
+				display: block;
+			}
+
+			.video-pod-category {
+				font-size: 12px;
+				font-weight: 400;
+			}
+
+			.video-pod-company {
+				font-weight: 400;
+				font-size: 18px;
+				width: 80%;
+			}
+		}
+	}
+
+	a {
+		display: block;
+		margin-top: 70px;
+		color: $tint-colour;
+	}
+}
+
+.video-pod-2 {
+	margin-right: 0;
+}
+
+.pricing-pods {
+	@extend .pods;
+	height: auto;
+	color: $pricing-pod-text;
+
+	.pod-title {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 67px;
+	}
+
+	.button {
+		border-radius: 3px;
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+		color:#fff;
+
+
+		line-height: 45px;
+		@media screen and #{$desktop} {
+			max-height: 2px;
+
+			overflow: hidden;
+			color:transparent;
+			/* Set our transitions up. */
+			-webkit-transition: max-height 0.8s;
+			-moz-transition: max-height 0.8s;
+			transition: max-height 0.8s;
+
+		}
+
+
+
+	}
+
+	.price {
+	    margin-top: 44px;
+	    margin: auto;
+	}
+
+	.price-group {
+		display: inline-block;
+	    position: relative;
+	    text-align: left;
+	}
+
+	.currency-symbol, .price, .schedule, .licence {
+		font-weight: bold;
+	}
+
+	.currency-symbol {
+		font-size: 23px;
+		left: 2px;
+	    position: absolute;
+	    top: 0;
+	}
+
+	.price-value {
+		font-size: 62px;
+	    line-height: 48px;
+	    padding-left: 16px;
+	    text-align: left;
+	}
+
+	.currency {
+	    font-size: 14px;
+	    position: absolute;
+	    right: 31px;
+	}
+	.schedule {
+		bottom: 0;
+	    font-size: 24px;
+	    position: absolute;
+	    right: 0;
+	}
+
+	.billing {
+		font-size: 12px;
+		padding: 15px 0;
+	}
+
+	.licence {
+		padding: 15px 0;
+		border-top: 1px solid $pricing-pod-text;
+		border-bottom: 1px solid $pricing-pod-text;
+	}
+
+	.pricing-ipads {
+		padding: 24px 0 54px 0;
+	}
+
+	.content-heading {
+		padding-bottom: 24px;
+	    font-family: "gothamhtf-book";
+	}
+
+	.pod-about {
+		width: 225px;
+		margin: 0 auto 24px auto;
+	}
+
+	@media screen and #{$widescreen} {
+		width: 283px;
+	}
+
+}
+
+@media screen and #{$desktop} {
+
+.pricing-pods:hover {
+
+	.button {
+		// height:auto;
+		//  transition: max-height 0.25s ease-in;
+		 color: #fff;
+		//  transform: translateY(3px);
+		 max-height: 200px;
+	}
+}
+}
+
+.solo-pod {
+	margin-right: 15px;
+
+	.price-group {
+		width: 156px;
+	}
+
+	.pod-title {
+		color: $solo-pod;
+	}
+
+	.button {
+		background-color: $solo-pod;
+	}
+}
+
+.dual-pod {
+	margin-right: 15px;
+
+	.price-group {
+		width: 177px;
+	}
+
+	.pod-title {
+		color: $dual-pod;
+	}
+
+	.button {
+		background-color: $dual-pod;
+	}
+}
+
+.team-pod {
+	margin-right: 15px;
+
+	.price-group {
+		width: 195px;
+	}
+
+	.pod-title {
+		color: $team-pod;
+	}
+
+	.button {
+		background-color: $team-pod;
+	}
+}
+
+.unlimited-pod {
+
+	.price-group {
+		width: 196px;
+	}
+
+	.pod-title {
+		color: $unlimited-pod;
+	}
+
+	.button {
+		background-color: $unlimited-pod;
+	}
+}
+
+.customer-pods {
+	@extend .pods;
+	text-align: left;
+	background-color: #fff;
+	color: $regular-inverse-dark;
+	margin-right: 20px;
+	margin-bottom: 50px;
+
+	h6 {
+		color: $regular-inverse-dark;
+		padding: 25px 0 25px 0;
+		font-family: "gothamhtf-book";
+		font-weight: 300;
+	}
+
+	.pod-about {
+		padding: 20px;
+		position: relative;
+		top: -2px;
+		border-left: 1px solid #bcbec0;
+		border-right: 1px solid #bcbec0;
+		border-bottom: 1px solid #bcbec0;
+		min-height: 128px;
+	}
+
+	.pod-quote {
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.pod-category {
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+
+	.pod-media {
+		position: absolute;
+		right: 17px;
+		top: 11px;
+
+		img {
+			display: inline-block;
+		}
+	}
+
+	.pod-image {
+		width: 100%;
+	}
+
+	@media screen and #{$mobile} {
+		width: 100%;
+	}
+
+	@media screen and #{$mobile-landscape} {
+		width: 70%;
+	}
+
+	@media screen and #{$tablet-portrait} {
+		width: 45%;
+	}
+
+	@media screen and #{$desktop} {
+		width: 382px;
+	}
+}
+
+	/* this won't work in IE flavour */
+
+	.customer-pods:nth-child(3n) {
+		margin-right: 0;
+	}
+
+
+.more-pod {
+	display: inline-block;
+	padding: 14px 0 14px 0;
+	text-align: center;
+	border: 1px solid #bcbec0;
+	color: #58595b;
+	margin-top: 52px;
+	margin-bottom: 200px;
+
+	.more-text {
+		padding-right: 25px;
+		background: transparent url("../images/arrow-down-pods.png") no-repeat right 50%;
+	}
+
+	@media screen and #{$mobile} {
+		width: 100%;
+	}
+
+	@media screen and #{$desktop} {
+		width: 382px;
+	}
+
+}

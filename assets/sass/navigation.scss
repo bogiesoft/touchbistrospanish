@@ -1,0 +1,687 @@
+@import "vars";
+@import "compass/css3";
+
+/* navigation
+============= */
+
+/* Wordpress generates the lists and nested lists depending on the menu structure in admin.
+	What is DOES NOT generate:;
+
+	1) <div class="nav-column primary-column"> <div class="nav-column secondary-column"> <div class="nav-column third-column"> - the nav columns in the mega menu
+	2) The classes that control the single and mega menu on the respective li: single-column-dropdown / mega-menu-dropdown
+	3) <ul class="mobile-menu-extras">  - this is the extra mobile menu that shows up at tablet and below
+
+We need to allow TB to modify the menu, but have some control over the code WP generates */
+
+
+/* top strip nav */
+#initial-navigation {
+
+	background-color: $initial-navigation-background;
+	text-align: right;
+
+	@media screen and #{$mobile} {
+		display: none;
+	}
+
+	@media screen and #{$desktop} {
+		display: block;
+	}
+
+	.menu-initial-menu-container {
+
+		@media screen and #{$desktop} {
+
+			display: inline-block;
+
+			a {
+				color: $secondary-links;
+				display: inline-block;
+				padding: 15px 13px;
+			}
+
+			a:hover {
+				color: $body;
+				background-color: $secondary-background-hover;
+			}
+
+			ul {
+				text-align: right;
+
+				li {
+					display: inline-block;
+				}
+			}
+
+		}
+	}
+}
+
+.mobile-burger-nav {
+
+	@media screen and #{$mobile} {
+		position: absolute;
+		left: 23px;
+		top: 23px;
+		display: block;
+	}
+
+	@media screen and #{$desktop} {
+		display: none;
+	}
+}
+
+/* main nav - the nav html5 tag */
+#menu {
+
+	@media screen and #{$mobile} {
+		/* controls mobile/tablet nav display */
+		position: absolute;
+		width: 77%;
+		left: 0;
+		top: 67px;
+		height: 847px;
+		background: #fff;
+		z-index: 2;
+	}
+
+	@media screen and #{$tablet-portrait} {
+		top: 74px;
+	}
+
+	@media screen and #{$desktop} {
+		background: none;
+		float: right;
+	    height: 100%;
+	    left: auto;
+	    position: relative;
+	    text-align: right;
+	    top: 25px;
+	    width: auto;
+	}
+}
+
+/* wordpress generated container */
+
+.menu-main-menu-container {
+	text-align: right;
+
+	.mobile-menu-close-toggle {
+
+		span {
+			@media screen and #{$mobile} {
+				padding: 25px 36px 24px;
+				background: #787878 url("../images/resp-menu-cross.png") no-repeat center center;
+			}
+		}
+
+		@media screen and #{$mobile} {
+		    position: absolute;
+		    right: -72px;
+		    top: 26px;
+		    height: 822px;
+		    background-color: rgba(0, 0, 0, 0.62);
+		}
+
+	    @media screen and #{$desktop} {
+	    	display: none;
+	    }
+	}
+
+	.mobile-menu-back-toggle {
+		background: transparent url("../images/left-menu-arrow.png") no-repeat left 50%;
+		color: #fffefe;
+		padding-left: 20px;
+	    position: absolute;
+	    left: 37px;
+	    top: 23px;
+	    display: none;
+	    font-family: "Gotham SSm A", "Gotham SSm B";
+	    font-size: 18px;
+	    font-weight: 300;
+	}
+
+	@media screen and #{$mobile} {
+		background: $tint-colour url("../images/tb-mobile-logo.png") no-repeat center 6px;
+    	padding-top: 67px;
+		display: block;
+	}
+
+	@media screen and #{$desktop} {
+		padding-top: 0;
+		height: auto;
+		background: none;
+	}
+
+	.menu {
+		font-size: 18px;
+		cursor: default;
+		position: relative;
+		z-index: 500;
+		text-transform: uppercase;
+		text-align: left;
+
+		a {
+			font-family: "Gotham SSm A", "Gotham SSm B";
+			color: #252525;
+			font-size: 18px;
+			font-weight: 300;
+		}
+
+		a:hover, a:active, a:visited {
+			background: none;
+		}
+
+		a:hover {
+			@media screen and #{$desktop} {
+				color: $standard-links-hover;
+			}
+		}
+
+		@media screen and #{$mobile} {
+			background: #fff;
+			display: block;
+			padding: 5px 0 66px;
+
+			a {
+				display: block;
+				padding: 20px 0 5px 35px;
+			}
+
+			> li {
+				display: block;
+			}
+
+			.more, .pos {
+				background: transparent url("../images/right-gold-arrow.png") no-repeat scroll 209px 19px;
+				cursor: pointer;
+			}
+		}
+
+		@media screen and #{$desktop} {
+			background: none;
+			padding: 0 0 0;
+			display: inline-block;
+
+			.more {
+				padding-right: 28px;
+				background: transparent url("../images/grey-arrow-down.png") no-repeat scroll right 23%;
+			}
+
+			a {
+				padding: 0 8px 20px;
+			}
+
+			> li {
+				display: inline-block;
+			}
+		}
+	}
+
+	.sub-menu {
+
+		a {
+			@media screen and #{$mobile} {
+				display: block;
+				padding: 20px 0 5px 35px;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 20px;
+				text-transform: none;
+				color: #252525;
+			}
+
+			@media screen and #{$desktop} {
+				font-weight: 300;
+				color: #363636;
+			}
+		}
+	}
+}
+
+/* Position the sub menus off screen and add a transition to them for when they
+   are translated back in. Strip if desktop */
+
+.main-menu, .single-column-dropdown .sub-menu, .mega-menu-dropdown-is-active .sub-menu {
+	@media screen and #{$mobile} {
+		@include translateX(-130%);
+	}
+
+	@media screen and #{$desktop} {
+		transform: none;
+		transition: none;
+		transition-duration: none;
+		transition-timing-function: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-webkit-transform: none;
+	}
+}
+
+.main-menu {
+	@include transition-property(transform);
+	@include transition-duration(0.3s, 0s);
+	@include transition-timing-function(ease);
+}
+
+/* If the menu is active, slide the menus in */
+
+.menu-is-active, .single-dropdown-is-active .sub-menu, .mega-dropdown-is-active .sub-menu {
+	/*transform: translateX(0);*/
+	@include translateX(0);
+	@include transition-property(transform);
+	@include transition-duration(0.3s, 0s);
+	@include transition-timing-function(ease);
+}
+
+/* For the more mega, transition the menu out. We do this because part of the menu is already
+   showing in the main tree, and we must hide them and fade the others in */
+
+.mega-dropdown-is-transitioning {
+	.sub-menu {
+		@include transition-duration(0s);
+		/*transform: translateX(-100%);*/
+		@include translateX(-100%);
+	}
+}
+
+/* This is needed to overlay the mega sub menu. Suggest we improve by hiding the other menu altogether */
+
+.mega-dropdown-is-active .sub-menu {
+	top: 0;
+}
+
+/* Both sub-menus are absolute positioned in the relative container (the UL menu-main-menu) */
+
+.single-column-dropdown, .mega-menu-dropdown {
+	.sub-menu {
+		@media screen and #{$mobile} {
+		    position: absolute;
+		    right: 0;
+		    height: 100%;
+		    width: 100%;
+		    z-index: 600;
+			background: #fff;
+
+		}
+
+		@media screen and #{$desktop} {
+			transform: none;
+			top: auto;
+			height: auto;
+		}
+	}
+}
+
+/* These are hidden in the main tree, but reveal when the MORE link is clicked */
+
+.mega-menu-dropdown .primary-column,  .mega-menu-dropdown .secondary-column {
+ 	@media screen and #{$mobile} {
+ 		display: none;
+ 	}
+ 	@media screen and #{$desktop} {
+ 		display: block;
+ 	}
+}
+
+/* This class gets added to #menu so we can make some visual tweaks for the single menu drops */
+
+.single-is-active {
+ 	.mega-menu-dropdown {
+ 		.sub-menu {
+ 			display: none;
+ 		}
+ 	}
+
+ 	.single-column-dropdown {
+ 	 	.sub-menu {
+ 	 		top: 0;
+ 	 	}
+ 	}
+}
+
+/* When the mega menu is active, let's display the columns we need to */
+
+.mega-dropdown-is-active .primary-column, .mega-dropdown-is-active .secondary-column {
+	@media screen and #{$mobile} {
+ 		display: block;
+ 	}
+ 	@media screen and #{$desktop} {
+ 		display: none;
+ 	}
+}
+
+/* When the mega is active, we hide these things */
+
+.mega-dropdown-is-active .mobile-menu-extras, .mega-dropdown-is-active .getting-started {
+ 	display: none;
+}
+
+/* This is the li dropdown that contains the single ul */
+
+.single-column-dropdown {
+
+	@media screen and #{$desktop} {
+		/* controls single col nav */
+		position: relative;
+	}
+
+	.sub-menu {
+
+		@media screen and #{$desktop} {
+			padding-top: 30px;
+			display: block;
+			padding: 0;
+			left: 0;
+			top: 38px;
+			width: 289px;
+			height: auto;
+		}
+
+		li {
+			width: 100%;
+		}
+
+		a {
+			@media screen and #{$desktop} {
+				padding: 16px !important;
+				font-size: 18px;
+			}
+		}
+
+		a:hover {
+			@media screen and #{$desktop} {
+				background: $tint-colour;
+				color: $body;
+			}
+		}
+	}
+}
+
+/* This contains all ul sub-menu styles for the mega menu */
+
+.mega-menu-dropdown {
+	.sub-menu {
+
+		@media screen and #{$mobile} {
+			margin-top: 30px;
+		}
+
+		@media screen and #{$desktop} {
+			margin: 0;
+			right: 0;
+			padding: 20px 0 20px 35px;
+			width: 626px;
+			min-height: 296px
+		}
+
+		a {
+			@media screen and #{$desktop} {
+				padding: 0 0 15px 0 !important;
+			}
+		}
+	}
+}
+
+.mega-dropdown-is-active .sub-menu {
+	margin-top: 0;
+}
+
+/* sub menu is the ul - common styles */
+
+.sub-menu {
+
+	a {
+		display: block;
+	}
+
+	li {
+		display: block;
+	}
+
+	.heading {
+
+		@media screen and #{$mobile} {
+			padding: 20px 0 5px 35px;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 24px;
+			text-transform: uppercase;
+			color: #252525;
+			font-family: "Gotham SSm A", "Gotham SSm B";
+		}
+
+		@media screen and #{$desktop} {
+			font-size: 14px;
+			color: #c5c5c5;
+			padding: 0 0 10px 0;
+			color: $navigation-column-headings;
+			border-bottom: none;
+		}
+
+		span {
+			@media screen and #{$mobile} {
+				border-bottom: 1px solid #252525;
+				display: block;
+				width: 85%;
+				padding-bottom: 8px;
+			}
+
+			@media screen and #{$desktop} {
+				padding: 0;
+				border: none;
+				width: auto;
+			}
+		}
+	}
+
+	@media screen and #{$mobile} {
+
+		.mobile-menu-extras {
+			a {
+				padding: 20px 0 5px 35px !important;
+				font-size: 18px;
+				font-weight: 300;
+			}
+		}
+	}
+
+	@media screen and #{$desktop} {
+		position: absolute;
+		border: 1px solid #d8d8d8;
+
+		/* this is desktop only transitions */
+
+		@include transition-property(all);
+  		@include transition-duration(.1s, 0s);
+  		@include transition-timing-function(ease);
+		visibility: hidden;
+		background: #fff;
+		font-size: 14px;
+		opacity: 0;
+		text-transform: none;
+		width: 100%;
+
+		.mobile-menu-extras {
+			display: none;
+		}
+	}
+}
+
+.menu > li > a {
+	position: relative;
+	z-index: 510;
+}
+
+/* this controls the visibility on hover of the menus */
+
+.single-column-dropdown:hover > .sub-menu,
+.mega-menu-dropdown:hover > .sub-menu {
+
+	@media screen and #{$desktop} {
+		opacity: 1;
+		overflow: visible;
+		visibility: visible;
+	}
+}
+
+.nav-column {
+	@media screen and #{$desktop} {
+		float: left;
+	}
+}
+
+.primary-column, .secondary-column, .third-column  {
+	@media screen and #{$desktop} {
+		min-height: 282px;
+	}
+}
+
+.primary-column {
+	@media screen and #{$desktop} {
+		width: 32%;
+		padding-right: 13px;
+	}
+}
+
+.secondary-column {
+	@media screen and #{$desktop} {
+		border-left: 1px solid #d8d8d8;
+		padding-right: 22px;
+		padding-left: 19px;
+		width: 26%;
+		display: block;
+	}
+}
+
+.third-column {
+
+	position: relative;
+
+	@media screen and #{$mobile} {
+		display: block;
+		width: 100%;
+	}
+
+	@media screen and #{$desktop} {
+		border-left: 1px solid #d8d8d8;
+		padding-right: 0;
+		padding-left: 19px;
+		display: block;
+		width: 24%;
+	}
+
+	.third-column-contact {
+		@media screen and #{$mobile} {
+			display: none;
+		}
+		@media screen and #{$desktop} {
+			display: block;
+		}
+	}
+
+	.getting-started {
+
+		@media screen and #{$mobile} {
+			padding: 35px 0 3px 60px;
+			border-top: 1px solid #b0b0b0;
+			border-bottom: 1px solid #b0b0b0;
+		}
+
+		@media screen and #{$desktop} {
+   			position: relative;
+    		top: 65px;
+    		border: none;
+    		padding: 0;
+    	}
+
+		.heading {
+			@media screen and #{$mobile} {
+				display: none;
+			}
+			@media screen and #{$desktop} {
+				display: block;
+				padding-bottom: 0;
+			}
+		}
+
+		a {
+			@media screen and #{$mobile} {
+				color: #b69859 !important;
+    			font-weight: bold;
+    			text-transform: uppercase;
+    			padding: 0 0 30px 0 !important;
+    			font-size: 14px;
+				font-weight: 500;
+				line-height: 20px;
+			}
+
+			@media screen and #{$desktop} {
+				font-size: 12px;
+    			border-bottom: 1px solid #a1a1a1;
+    			padding: 12px 0 16px !important;
+    		}
+		}
+	}
+}
+
+.sticky-section-sub-navigation {
+	.section-sub-navigation.affix {
+		@media screen and #{$desktop} {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+	}
+}
+
+#top-link-block {
+
+	@media screen and #{$mobile} {
+		display: none;
+	}
+
+	@media screen and #{$desktop} {
+		display: block;;
+		@include transition-property(all);
+		@include transition-duration(0.7s);
+		@include transition-timing-function(ease-in-out);
+	}
+
+	a {
+		display: none;
+	}
+}
+
+#top-link-block.affix-top {
+	@include translateY(250px);
+}
+
+#top-link-block.affix {
+
+	@media screen and #{$desktop} {
+
+		@include translateY(0);
+	    bottom: 50px;
+	    display: block;
+	    position: fixed;
+	    right: 50px;
+	    text-align: center;
+	    z-index: 4;
+
+	    .fa-chevron-up {
+	    	margin-top: 16px;
+	    }
+
+		a {
+			@include border-radius(50%);
+			font-size: 28px;
+			font-weight: normal;
+			height: 60px;
+			width: 60px;
+			display: block;
+			color: $tint-colour;
+			background-color: #464646;
+		}
+	}
+}

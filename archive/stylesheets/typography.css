@@ -1,0 +1,204 @@
+/* headings 
+=============*/
+/* headings 
+=============*/
+/* gold */
+/* links 
+=============*/
+/* grey on white */
+/* gold */
+/* white on grey */
+/* gold */
+/* light grey on dark */
+/* navigation 
+=============*/
+/* top strip navigation */
+/* very light grey */
+/* text 
+===========*/
+/* light grey on white */
+/* dark grey on white */
+/* dark grey */
+/* very dark grey */
+/* pods 
+================== */
+/* gold */
+/* blue */
+/* grey */
+/* yellow */
+/* orange */
+/* purple */
+/* pink */
+/* buttons 
+===========*/
+/* stronger gold */
+/* footer 
+===========*/
+/* media queries
+==================*/
+/* tablet landscape is 1024 as well */
+@font-face {
+  font-family: "gothamhtf-book";
+  src: url(../fonts/webfonts/gothamhtf-book-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-book-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-book-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-book-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-book-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-bold";
+  src: url(../fonts/webfonts/gothamhtf-bold-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-bold-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-bold-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-bold-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-bookcondensed";
+  src: url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-boldcondensed";
+  src: url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+.fa-star {
+  color: #f7d12d;
+}
+
+/* links and type
+================== */
+body {
+  color: #ffffff;
+  font-family: "gothamhtf-book";
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+p {
+  line-height: 24px;
+}
+
+h1, h2 {
+  /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; 
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.09), 0 0 25px rgba(0, 0, 0, 0.07); */
+  font-family: "gothamhtf-boldcondensed";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  h1, h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1, h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1, h2 {
+    /* text shadow only on home titles? 
+    	@include text-shadow(rgba(0, 0, 0, 0.09) 0 2px 3px, rgba(0, 0, 0, 0.07) 0 0 25px);
+    */
+    font-size: 86px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  h1.lead-title, h2.lead-title {
+    padding-top: 35px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1.lead-title, h2.lead-title {
+    padding-top: 68px;
+  }
+}
+
+h2 {
+  font-family: "gothamhtf-boldcondensed";
+}
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: 32px;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 62px;
+    padding-top: 66px;
+  }
+}
+
+h3 {
+  font-family: "gothamhtf-bookcondensed";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media screen and (min-width: 320px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+h4 {
+  font-family: "gothamhtf-boldcondensed";
+  font-size: 32px;
+}
+
+h5 {
+  font-family: "gothamhtf-boldcondensed";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h6 {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+}
+@media screen and (min-width: 320px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h6 {
+    font-size: 18px;
+  }
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.strong, strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "gothamhtf-book";
+  src: url(../fonts/webfonts/gothamhtf-book-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-book-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-book-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-book-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-book-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-bold";
+  src: url(../fonts/webfonts/gothamhtf-bold-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-bold-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-bold-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-bold-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-bookcondensed";
+  src: url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-bookcondensed-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamhtf-boldcondensed";
+  src: url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.eot);
+  src: url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.woff2) format("woff2"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.woff) format("woff"), url(../fonts/webfonts/gothamhtf-boldcondensed-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+.fa-star {
+  color: #f7d12d;
+}

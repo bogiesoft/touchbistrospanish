@@ -1,0 +1,593 @@
+@import "vars";
+@import "layout";
+@import "mixins";
+@import "buttons";
+@import "sections";
+@import "pods";
+@import "compass/css3";
+
+.setup-sections {
+	@media screen and #{$desktop} {
+		height: 732px;
+		overflow: visible;
+	}
+
+	.lead-title {
+		font-size: 62px;
+		font-weight: 700;
+		line-height: 67px;
+		margin-top: 40px;
+		padding-top: 0;
+	}
+
+	.intro-text {
+
+		margin-top: 25px;
+
+		@media screen and #{$desktop} {
+			width: 932px;
+			display: inline-block;
+		}
+	}
+
+	.section-toggles {
+		padding-top: 40px;
+
+		ul {
+			border: 3px solid #fff;
+
+			@media screen and #{$desktop} {
+				display: inline-block;
+			}
+		}
+
+		li {
+			@media screen and #{$mobile} {
+				display: block;
+				width: 100%;
+			}
+
+			@media screen and #{$desktop} {
+				display: inline-block;
+				width: auto;
+			}
+		}
+
+		li:nth-child(2) {
+			a {
+				@media screen and #{$mobile} {
+					padding: 15px 0;
+				}
+
+				@media screen and #{$desktop} {
+					padding: 15px 40px;
+				}
+			}
+		}
+
+		a {
+			@media screen and #{$mobile} {
+				padding: 15px 0;
+				width: 100%;
+			}
+
+			@media screen and #{$desktop} {
+				padding: 15px 60px;
+				width: auto;
+			}
+
+			display: inline-block;
+			font-family: "Gotham SSm A", "Gotham SSm B";
+			font-size: 18px;
+			font-weight: 500;
+			color: $regular-inverse-dark;
+		}
+	
+		.active {
+			a {
+				background-color: $body;
+			}
+
+			span {
+				padding-bottom: 3px;
+			}
+		}
+	}
+
+	.setup-hover-section {
+		position: relative;
+
+		@media screen and #{$desktop} {
+			width: 944px;
+			display: inline-block;
+		}
+
+		@media screen and #{$widescreen} {
+			display: block;
+			width: auto;
+		}
+
+		.lead-graphic {
+
+			z-index: 6;
+
+			@media screen and #{$mobile} {
+				width: 100%;
+				margin-top: 30px;
+			}
+		
+			@media screen and #{$desktop} {
+				margin-top: 0;
+    			position: relative;
+    		}
+
+    		@media screen and #{$widescreen} {
+    			width: 97%;
+    		}
+		}
+
+		.toggle-menu {
+			z-index: 9;
+			left: 50px;
+		    position: absolute;
+		    top: 32px;
+
+		    li {
+		    	padding: 0 0 20px 28px;
+		    }
+		}
+
+		.toggles {
+
+			@media screen and #{$mobile} {
+				display: none;
+			}
+
+			@media screen and #{$desktop} {
+				display: block;
+			}
+
+			li {
+				@media screen and #{$desktop} {
+					font-family: "Gotham SSm A", "Gotham SSm B";
+					text-align: left;
+					font-size: 16px;
+					font-weight: 300;
+				}
+			}
+
+			li:last-child {
+				@media screen and #{$desktop} {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.image-toggles {
+
+			z-index: 7;
+
+			li {
+				margin-bottom: 0;
+				padding: 1px 0 2px 22px;
+				
+				@media screen and #{$desktop} {
+	   				width: 200px;
+	   				position: absolute;
+	   			}
+			}
+		}
+	}
+
+	.popups {
+
+		@media screen and #{$mobile} {
+			display: none;
+		}
+
+		@media screen and #{$desktop} {
+			position: absolute;
+			width: 317px;
+			padding: 25px;
+			background-color: white;
+			text-align: left;
+			z-index: 10;
+
+			@include background-opacity(#fff, 0.9);
+			@include box-shadow(rgba(0, 0, 0, 0.06) 1.8px 2.4px 5px 0.1px);
+
+			h3, p {
+				color: $regular-inverse-dark;
+			}
+
+			h3 {
+				font-size: 23px;
+				font-weight: 700;
+				text-transform: none;
+			}
+
+			p {
+				font-size: 12px;
+				font-family: "Gotham SSm A", "Gotham SSm B";
+				line-height: 16px;
+			}
+
+			.pop-content {
+				position: relative;
+			}
+
+			.triangle {
+				opacity: 0.9;
+				position: absolute;
+				bottom: -20px;
+				left: 35px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 20px 20px 0 20px;
+				border-color: #ffffff transparent transparent transparent;
+			}
+		}
+	}
+
+	.hybrid-dark {
+		color: #010101;
+	}
+
+	li {
+		color: $body;
+	}
+
+	li:hover {
+		cursor: default;
+	}
+
+	.hybrid { background: transparent url("../images/hybrid.png") no-repeat left top; }
+	.hybrid-dark {background: transparent url("../images/hybrid-d.png") no-repeat left top; }
+	.one { background: transparent url("../images/1.png") no-repeat left top; }
+	.two { background: transparent url("../images/2.png") no-repeat left top; }
+	.three { background: transparent url("../images/3.png") no-repeat left top; }
+	.four { background: transparent url("../images/4.png") no-repeat left top; }
+	.five { background: transparent url("../images/5.png") no-repeat left top; }
+	.six { background: transparent url("../images/6.png") no-repeat left top; }
+}
+
+.setup-lead {
+	background-color: #fcb917;
+
+	.lead-graphic {
+
+		@media screen and #{$desktop} {
+			top: 223px;	
+    	}
+
+		@media screen and #{$widescreen} {
+			width: 97%;
+			top: 175px;
+		}
+	}
+
+	@media screen and #{$desktop} {
+		margin-bottom: 280px;
+	}
+
+	.section-toggles {
+		li {
+			background-color: #fcb917;
+		}
+
+		.active a span {
+			border-bottom: 2px solid #fcb917;
+		}
+	}
+
+	.image-toggles {
+		@media screen and #{$desktop} {
+		    height: 256px;
+		    position: relative;
+		    text-align: left;
+		    width: 100%;
+		    bottom: 225px;
+		}
+
+		@media screen and #{$widescreen} {
+			height: 433px;
+			bottom: 498px;
+		}
+		 
+		.hybrid-dark {
+
+			@media screen and #{$desktop} {
+				bottom: 4px;
+   				left: 1px;
+			}
+			
+			@media screen and #{$widescreen} {
+	  			left: 40px;
+	  		}
+		}
+
+		.one {
+
+			@media screen and #{$desktop} {
+			 	left: 400px;
+    			top: 0;
+			}
+
+			@media screen and #{$widescreen} {
+				left: 514px;
+   				top: 128px;
+			}
+		}
+
+		.two {
+			@media screen and #{$desktop} {
+				bottom: 73px;
+    			right: 117px;
+			}
+
+			@media screen and #{$widescreen} {
+				bottom: 84px;
+    			right: 216px;
+			}
+		}
+
+		.three {
+			@media screen and #{$desktop} {
+				bottom: 52px;
+    			right: 26px;
+			}
+
+			@media screen and #{$widescreen} {
+				bottom: 61px;
+    			right: 91px;
+			}
+		}
+
+		.four {
+
+			@media screen and #{$desktop} {
+				bottom: 67px;
+    			left: 336px;
+    		}
+
+			@media screen and #{$widescreen} {
+				bottom: 83px;
+   				left: 460px;
+	    	}
+		}
+
+		.five {
+    		@media screen and #{$desktop} {
+				bottom: 65px;
+    			left: 106px;
+	   		}
+
+			@media screen and #{$widescreen} {
+  				bottom: 78px;
+   				left: 206px;
+	   		}
+		}
+	}
+
+	.hybrid-popup {
+
+		@media screen and #{$desktop} {
+			left: -45px;
+    		top: 259px;
+	    }
+
+		@media screen and #{$widescreen} {
+			left: -6px;
+	    	top: 261px;
+	    }
+	}
+
+	.one-popup {
+
+		@media screen and #{$desktop} {
+			left: 355px;
+   			top: 58px;
+	    }
+
+		@media screen and #{$widescreen} {
+			left: 468px;
+	    	top: 12px;
+	    }
+    }
+
+    .two-popup {
+    	@media screen and #{$desktop} {
+			right: 117px;
+    		top: 214px;
+	    }
+
+		@media screen and #{$widescreen} {
+			right: 117px;
+    		top: 214px;
+	    }
+    }
+
+    .three-popup {
+    	@media screen and #{$desktop} {
+			right: -9px;
+    		top: 221px;
+	    }
+
+		@media screen and #{$widescreen} {
+			right: -9px;
+    		top: 221px;
+	    }
+    }
+
+    .four-popup {
+    	@media screen and #{$desktop} {
+			left: 414px;
+    		top: 214px;
+	    }
+
+		@media screen and #{$widescreen} {
+			left: 414px;
+    		top: 214px;
+	    }
+    }
+   
+    .five-popup {
+    	@media screen and #{$desktop} {
+			left: 0px;
+    		top: 236px;
+	    }
+
+		@media screen and #{$widescreen} {
+			left: 161px;
+   			top: 203px;
+	    }
+    }
+}
+
+.setup-multi {
+	background-color: #28a088;
+	
+	@media screen and #{$mobile} {
+		padding-bottom: 30px;
+	}
+
+	@media screen and #{$desktop} {
+		height: 763px;
+		padding-bottom: 0;
+		margin-bottom: 385px;
+	}
+
+	.image-toggles {
+		@media screen and #{$desktop} {
+		    position: relative;
+		    text-align: left;
+		    width: 100%;
+		    bottom: 275px;
+    		height: 289px;
+		}
+
+		@media screen and #{$widescreen} {
+			height: 433px;
+			bottom: 498px;
+		}
+	}
+
+	.section-toggles {
+		.active a span {
+			border-bottom: 3px solid #28a088;
+		}
+	}
+
+	.setup-hover-section {
+		.toggle-menu {
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.setup-hover-section {
+		.lead-graphic {
+
+			@media screen and #{$desktop} {
+				top: 196px;
+			}
+
+			@media screen and #{$widescreen} {
+				top: 143px;
+				width: auto;
+			}
+		}
+	}
+
+	.image-toggles {
+
+		.hybrid {
+
+			@media screen and #{$desktop} {
+				left: 422px;
+    			top: 0;
+			}
+			
+			@media screen and #{$widescreen} {
+	  			left: 542px;
+    			top: 90px;
+	  		}
+		}
+
+		.one {
+
+			@media screen and #{$desktop} {
+				bottom: 131px;
+   				left: 105px;
+			}
+
+			@media screen and #{$widescreen} {
+				bottom: 162px;
+   				left: 168px;
+			}
+		}
+
+		.two {
+			@media screen and #{$desktop} {
+				bottom: 64px;
+    			left: 300px;
+			}
+
+			@media screen and #{$widescreen} {
+				bottom: 82px;
+    			left: 456px;
+			}
+		}
+
+		.three {
+			@media screen and #{$desktop} {
+				bottom: 3px;
+   				right: 200px;
+			}
+
+			@media screen and #{$widescreen} {
+				bottom: 9px;
+    			right: 317px;
+			}
+		}
+
+		.four {
+
+			@media screen and #{$desktop} {
+				bottom: 46px;
+    			left: 420px;
+    		}
+
+			@media screen and #{$widescreen} {
+				bottom: 58px;
+    			left: 542px;
+	    	}
+		}
+
+		.five {
+    		@media screen and #{$desktop} {
+				bottom: 49px;
+    			left: 0;
+	   		}
+
+			@media screen and #{$widescreen} {
+  				bottom: 66px;
+    			left: 0;
+	   		}
+		}
+
+		.six {
+    		@media screen and #{$desktop} {
+				bottom: 87px;
+   				left: 235px;
+	   		}
+
+			@media screen and #{$widescreen} {
+  				bottom: 102px;
+    			left: 323px;
+	   		}
+		}
+	}
+}
+
