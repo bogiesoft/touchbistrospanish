@@ -1156,6 +1156,8 @@ outline: rgb(98, 97, 97) none 0px;
 .no-touch #videos a:hover {
   text-decoration: underline;
 }
+
+
 .lang {
     padding: 0 12px 0 30px;
     background: url(../images/earth-icon-lang.png) left 50% no-repeat;
@@ -1164,7 +1166,7 @@ outline: rgb(98, 97, 97) none 0px;
     display: inline-block;
     height: 38px;
     float: right;
-    /*display: none;*/
+
 }
 .lang:hover {
 	z-index:999;
@@ -1203,6 +1205,7 @@ outline: rgb(98, 97, 97) none 0px;
 }
 .lang:hover{
 }
+
 footer #notices .cell-right a.lang{
 	display:none
 }
